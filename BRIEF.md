@@ -10,7 +10,8 @@ Every morning, make one poster for each brand below and show both to the owner f
 - Email: contact@thetoptickets.com
 - Logo: `templates/assets/toptickets-logo.png` (coral "T")
 - Approved style: `templates/toptickets-template.html`, which is the posted Musée d'Orsay poster. It has a white header with the big logo and "THE TOP TICKETS", a navy scene with an SVG illustration, the attraction name, 2 benefit badges, a coral "BOOK NOW" button and a coral contact strip at the bottom.
-- Known products (confirmed by owner): Musée d'Orsay Entry Ticket (instant confirmation, free cancellation), Musée de l'Orangerie tickets.
+- Products (confirmed by owner): all excursions across Europe, plus guided walking tours. So any well-known European attraction ticket, day trip/excursion or guided walking tour is fair to feature. Examples already confirmed by name: Musée d'Orsay Entry Ticket (instant confirmation, free cancellation), Musée de l'Orangerie tickets.
+- Vary the topics: museums, landmarks, day trips, river cruises and guided walking tours, across different European cities.
 - Prices: the site shows prices in euros, but they are not known here. Do not put a price unless the owner gives it.
 
 ## Brand 2: Z Ocean Tours (@z.ocean_tours)
@@ -22,6 +23,9 @@ Every morning, make one poster for each brand below and show both to the owner f
 - Logo: `templates/assets/zocean-logo.jpg`
 - Approved style: `templates/zocean-template.html`, which is the posted Paris + Switzerland poster. The owner liked it because it shows a specific package, duration and an inclusions list. It has a white logo header, a hero illustration with a big package title and a days/nights ribbon, a white "WHAT'S INCLUDED" card with 8 emoji-icon inclusions, a "Perfect for..." line, an orange "GET YOUR QUOTE ON WHATSAPP" button and a blue contact strip.
 - The owner said a plain "Europe holiday" poster was boring. Always feature a specific multi-country package with inclusions.
+
+## Stories
+- Every approved feed post also goes up as a story. Make the story image with `python3 templates/make_story.py <poster.jpg> stories/<date>-<topic>-story.jpg <topcolor> <bottomcolor>` (Top Tickets: "#24365a" "#ff6b52"; Z Ocean: "#ffb000" "#0a4fd6"), commit it, and publish with action `create_story` and its raw GitHub `image_url` right after the feed post.
 
 ## Rules
 - Size 1080x1350 JPEG. Render the HTML with Playwright using /usr/bin/google-chrome, then look at the result and fix overlaps before showing it.
