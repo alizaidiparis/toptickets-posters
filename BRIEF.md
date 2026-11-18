@@ -24,6 +24,17 @@ Every morning, make one poster for each brand below and show both to the owner f
 - Approved style: `templates/zocean-template.html`, which is the posted Paris + Switzerland poster. The owner liked it because it shows a specific package, duration and an inclusions list. It has a white logo header, a hero illustration with a big package title and a days/nights ribbon, a white "WHAT'S INCLUDED" card with 8 emoji-icon inclusions, a "Perfect for..." line, an orange "GET YOUR QUOTE ON WHATSAPP" button and a blue contact strip.
 - The owner said a plain "Europe holiday" poster was boring. Always feature a specific multi-country package with inclusions.
 
+## LinkedIn (B2B, different from Instagram)
+- Pages (Windsor.ai connector `linkedin_organic`): The Top Tickets = `105064529`, Z-Ocean Tours = `90948921`.
+- Audience: B2B travel agents, tour operators, DMCs and corporate travel planners, not end travellers. Content must differ from the Instagram post of the day.
+- Goal: get agents to partner with us (resell our tickets/tours or packages, ask for agent rates, WhatsApp/email us). The tone is professional and warm, with few emojis and short paragraphs, and it ends with a question or a clear call to action for agents.
+- Rotate formats day to day, one LinkedIn post per company per day:
+  1. **B2B poster** (1200x1200 JPEG, brand style): e.g. "Partner with The Top Tickets: Europe-wide attraction tickets & guided walking tours for your clients", "Ready-made Paris + Swiss packages for your agency". Post with action `create_image_post` and the raw GitHub image_url.
+  2. **Quote card** (1200x1200 JPEG): a short original line about travel or the travel trade (never a copied or attributed quote from a real person), with the logo, plus commentary explaining why it matters for agents. Post with `create_image_post`.
+  3. **Story post** (text only, `create_post`): a short, engaging story or insight such as a behind-the-scenes moment, a peak-season tip for agents, a destination trend or a lesson from handling a group booking. Write it as the company's voice, keep it plausible and general, and never invent specific clients, numbers or events as if they really happened.
+- Never state commission %, net rates, B2B discounts or partner names unless the owner confirms them. Use "agent rates available on request" instead, and flag anything unconfirmed in the preview.
+- Save LinkedIn images under `linkedin/` with the date in the file name and log each LinkedIn post in posts-log.md with the brand "LinkedIn – <company>".
+
 ## Stories
 - Every approved feed post also goes up as a story. Make the story image with `python3 templates/make_story.py <poster.jpg> stories/<date>-<topic>-story.jpg <topcolor> <bottomcolor>` (Top Tickets: "#24365a" "#ff6b52"; Z Ocean: "#ffb000" "#0a4fd6"), commit it, and publish with action `create_story` and its raw GitHub `image_url` right after the feed post.
 
