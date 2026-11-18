@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'Inter','Noto Color Emoji',sans-serif; }
+  .poster { position:relative; width:1080px; height:1350px; background:#eef7ff; }
+  .head { position:absolute; top:0; left:0; right:0; height:150px; display:flex; align-items:center; justify-content:center; background:#fff; }
+  .head img { height:128px; }
+  .hero { position:absolute; top:150px; left:0; }
+  .title { position:absolute; top:182px; left:0; right:0; text-align:center; color:#fff; }
+  .title .k { font-size:24px; font-weight:800; letter-spacing:7px; color:#fff; text-shadow:0 2px 10px rgba(0,30,90,.5); }
+  .title h1 { font-size:92px; font-weight:900; letter-spacing:1px; line-height:1; margin-top:10px; text-shadow:0 4px 20px rgba(0,30,90,.55); }
+  .title h1 span { color:#ffd23f; }
+  .ribbon { display:inline-block; margin-top:18px; background:#ff6a1a; color:#fff; font-size:32px; font-weight:800; padding:10px 34px; border-radius:40px; box-shadow:0 6px 18px rgba(0,0,0,.25); }
+  .card { position:absolute; top:610px; left:50px; right:50px; height:428px; background:#fff; border-radius:30px; box-shadow:0 14px 40px rgba(10,79,214,.18); padding:28px 40px 0; }
+  .card h2 { text-align:center; font-size:26px; letter-spacing:6px; color:#0a4fd6; font-weight:900; }
+  .card h2:after { content:''; display:block; width:80px; height:4px; background:#ffb000; margin:12px auto 0; border-radius:2px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px 30px; margin-top:24px; }
+  .inc { display:flex; align-items:center; gap:16px; font-size:27px; font-weight:700; color:#12284f; }
+  .inc i { font-style:normal; width:60px; height:60px; flex:none; border-radius:18px; background:#e6f3ff; display:flex; align-items:center; justify-content:center; font-size:32px; }
+  .note { position:absolute; top:1056px; left:0; right:0; text-align:center; font-size:24px; font-weight:600; color:#3d5a8a; }
+  .cta { position:absolute; top:1096px; left:50%; transform:translateX(-50%); background:linear-gradient(90deg,#ffb000,#ff6a1a); color:#fff; border-radius:60px; padding:20px 50px; font-size:32px; font-weight:900; white-space:nowrap; box-shadow:0 8px 22px rgba(255,106,26,.4); }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:158px; background:#0a4fd6; color:#fff; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:12px; }
+  .web { font-size:34px; font-weight:800; letter-spacing:3px; }
+  .row { display:flex; gap:40px; align-items:center; }
+  .item { display:flex; align-items:center; gap:12px; font-size:29px; font-weight:700; }
+  .ico { width:42px; height:42px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; }
+</style></head>
+<body><div class="poster">
+  <svg class="hero" width="1080" height="480" viewBox="0 0 1080 480">
+    <defs>
+      <linearGradient id="skyL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7a59"/><stop offset="1" stop-color="#ffc977"/></linearGradient>
+      <linearGradient id="skyR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f8bff"/><stop offset="1" stop-color="#9fdcff"/></linearGradient>
+      <linearGradient id="blend" x1="0" y1="0" x2="1" y2="0"><stop offset=".40" stop-color="#fff" stop-opacity="0"/><stop offset=".60" stop-color="#fff" stop-opacity="1"/></linearGradient>
+      <mask id="m"><rect width="1080" height="480" fill="url(#blend)"/></mask>
+      <linearGradient id="bw" x1="0" x2="1"><stop offset=".42" stop-color="#fff"/><stop offset=".58" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    </defs>
+    <!-- Paris side -->
+    <rect width="1080" height="480" fill="url(#skyL)"/>
+    <!-- Swiss side blended -->
+    <rect width="1080" height="480" fill="url(#skyR)" mask="url(#m)"/>
+    <circle cx="330" cy="360" r="70" fill="#fff1c9" opacity=".8"/>
+    <!-- Alps right -->
+    <path d="M520 480 L640 300 L700 360 L800 230 L900 350 L960 300 L1080 420 L1080 480 Z" fill="#5f8fc9"/>
+    <path d="M800 230 L840 285 L820 280 L800 300 L782 280 L762 285 Z" fill="#fff"/>
+    <path d="M640 300 L668 342 L652 338 L640 350 L628 338 L614 342 Z" fill="#fff"/>
+    <path d="M960 300 L988 330 L972 328 L960 340 L948 328 L934 330 Z" fill="#fff"/>
+    <path d="M560 480 L680 380 L760 430 L860 360 L980 440 L1080 400 L1080 480 Z" fill="#2f9e5a"/>
+    <!-- chalet -->
+    <g transform="translate(960 392)"><path d="M0 30 L30 6 L60 30 Z" fill="#8a3b1e"/><rect x="6" y="30" width="48" height="30" fill="#c9773e"/><rect x="24" y="42" width="12" height="18" fill="#5a2510"/></g>
+    <!-- Paris skyline left -->
+    <g fill="#5a2333">
+      <path d="M0 480 L0 410 L50 410 L50 395 L110 395 L110 420 L150 420 L150 480 Z"/>
+      <path d="M330 480 L330 425 L390 425 L390 440 L460 440 L460 480 Z"/>
+      <g transform="translate(100 200) scale(.57)">
+      <path d="M180 480 L216 480 L236 400 L248 340 L254 300 L257 230 L260 300 L266 340 L278 400 L298 480 L334 480 L292 400 L280 350 L270 300 L262 230 L258 200 L256 200 L252 230 L244 300 L234 350 L222 400 Z"/>
+      <rect x="236" y="393" width="44" height="10"/><rect x="246" y="337" width="24" height="8"/></g>
+    </g>
+    <!-- red swiss train -->
+    <g transform="translate(600 424)">
+      <rect x="0" y="0" width="330" height="26" rx="8" fill="#e5232e"/>
+      <g fill="#fff" opacity=".9"><rect x="16" y="6" width="34" height="10" rx="3"/><rect x="62" y="6" width="34" height="10" rx="3"/><rect x="118" y="6" width="34" height="10" rx="3"/><rect x="164" y="6" width="34" height="10" rx="3"/><rect x="220" y="6" width="34" height="10" rx="3"/><rect x="266" y="6" width="34" height="10" rx="3"/></g>
+    </g>
+    <rect y="472" width="1080" height="8" fill="#eef7ff"/>
+  </svg>
+
+  <div class="head"><img src="assets/zocean-logo.jpg"></div>
+
+  <div class="title">
+    <div class="k">HOLIDAY PACKAGE</div>
+    <h1>PARIS <span>+</span> SWITZERLAND</h1>
+    <div class="ribbon">7 Days · 6 Nights</div>
+  </div>
+
+  <div class="card">
+    <h2>WHAT'S INCLUDED</h2>
+    <div class="grid">
+      <div class="inc"><i>🏨</i>6 Nights Hotel Stay</div>
+      <div class="inc"><i>🍳</i>Daily Breakfast</div>
+      <div class="inc"><i>🗼</i>Eiffel Tower Visit</div>
+      <div class="inc"><i>🚢</i>Seine River Cruise</div>
+      <div class="inc"><i>🏔️</i>Mt. Titlis Excursion</div>
+      <div class="inc"><i>🚆</i>Paris → Swiss by Train</div>
+      <div class="inc"><i>🚐</i>Airport Transfers</div>
+      <div class="inc"><i>🗺️</i>Lucerne &amp; Interlaken Tour</div>
+    </div>
+  </div>
+
+  <div class="note">Perfect for couples, families &amp; honeymooners ❤️</div>
+  <div class="cta">GET YOUR QUOTE ON WHATSAPP</div>
+
+  <div class="foot">
+    <div class="web">WWW.Z-OCEANTOURS.COM</div>
+    <div class="row">
+      <div class="item"><div class="ico">
+        <svg width="26" height="26" viewBox="0 0 24 24"><path fill="#25D366" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.900-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.6-.1 1.1z"/></svg>
+      </div>+33 7 51 13 64 73</div>
+      <div class="item"><div class="ico">
+        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#0a4fd6" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4 7v1.9l8 5 8-5V7z"/></svg>
+      </div>info@zoceantours.com</div>
+    </div>
+  </div>
+</div></body></html>
