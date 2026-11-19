@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- The Top Tickets · Layout B "Panorama + highlights": wide illustration band, cream info section with highlights + insider tips -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'DM Sans','Inter','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1080px; height:1350px; background:#fbf6ee; color:#14213a; }
+  .head { position:absolute; top:0; left:0; right:0; height:112px; background:#fff; display:flex; align-items:center; padding:0 50px; gap:18px; border-bottom:4px solid #ff6b52; }
+  .head img { width:76px; height:76px; }
+  .head .n { font-family:'Montserrat',sans-serif; font-size:36px; font-weight:800; letter-spacing:1.5px; }
+  .head .n span { color:#ff6b52; }
+  .head .pill { margin-left:auto; background:#14213a; color:#fff; font-size:21px; font-weight:700; letter-spacing:2px; padding:10px 22px; border-radius:30px; }
+  .hero { position:absolute; top:112px; left:0; }
+  .chip { position:absolute; top:142px; left:50px; background:#ff6b52; color:#fff; font-size:22px; font-weight:800; letter-spacing:3px; padding:10px 22px; border-radius:8px; }
+  .title { position:absolute; top:562px; left:50px; right:50px; }
+  .title h1 { font-family:'Bitter',serif; font-size:52px; font-weight:800; line-height:1.05; white-space:nowrap; }
+  .title h1 span { color:#ff6b52; }
+  .title p { margin-top:8px; font-size:25px; color:#5b6478; }
+  .cols { position:absolute; top:694px; left:50px; right:50px; display:grid; grid-template-columns:1.15fr 1fr; gap:28px; }
+  .box { background:#fff; border-radius:24px; padding:22px 24px 10px; height:366px; box-shadow:0 8px 24px rgba(20,33,58,.08); }
+  .box h3 { font-family:'Montserrat',sans-serif; font-size:21px; letter-spacing:3px; color:#ff6b52; font-weight:800; margin-bottom:14px; }
+  .hl { display:flex; gap:14px; margin-bottom:13px; font-size:22px; line-height:1.3; }
+  .hl b.n { flex:none; width:34px; height:34px; border-radius:50%; background:#14213a; color:#fff; font-size:18px; display:flex; align-items:center; justify-content:center; }
+  .tip { display:flex; gap:12px; margin-bottom:13px; font-size:21px; line-height:1.3; }
+  .tip i { font-style:normal; font-size:26px; flex:none; }
+  .badges { position:absolute; top:1096px; left:50px; display:flex; gap:14px; }
+  .badge { background:#e9f0ff; color:#14213a; border-radius:30px; padding:10px 20px; font-size:21px; font-weight:700; }
+  .badge b { color:#1aa260; margin-right:6px; }
+  .cta { position:absolute; top:1084px; right:50px; background:#ff6b52; color:#fff; border-radius:16px; padding:18px 34px; font-family:'Montserrat',sans-serif; font-size:28px; font-weight:800; }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:150px; background:#14213a; color:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; }
+  .foot .w { font-family:'Montserrat',sans-serif; font-size:34px; font-weight:800; letter-spacing:3px; color:#ff8a73; }
+  .foot .r { display:flex; gap:44px; font-size:29px; font-weight:700; }
+</style></head><body><div class="p">
+  <div class="head"><img src="assets/toptickets-logo.png"><div class="n">THE <span>TOP</span> TICKETS</div><div class="pill">{{PILL}}</div></div>
+  {{HERO_SVG}}
+  <div class="chip">{{CHIP}}</div>
+  <div class="title"><h1>{{TITLE}}</h1><p>{{SUBTITLE}}</p></div>
+  <div class="cols">
+    <div class="box"><h3>TOUR HIGHLIGHTS</h3>{{HIGHLIGHTS}}</div>
+    <div class="box"><h3>INSIDER TIPS</h3>{{TIPS}}</div>
+  </div>
+  <div class="badges">{{BADGES}}</div>
+  <div class="cta">BOOK NOW →</div>
+  <div class="foot"><div class="w">THETOPTICKETS.COM</div><div class="r"><span>💬 +33 7 51 13 64 73</span><span>✉️ contact@thetoptickets.com</span></div></div>
+</div></body></html>

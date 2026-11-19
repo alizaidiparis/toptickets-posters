@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- Z Ocean Tours · Layout B "Route + day-by-day itinerary": route map, itinerary timeline, inclusion chips -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'Poppins','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1080px; height:1350px; background:linear-gradient(180deg,#0a2f7a 0%,#0a4fd6 41%,#f3f8ff 41.1%,#f3f8ff 100%); color:#12284f; }
+  .logo { position:absolute; top:28px; left:40px; background:#fff; border-radius:22px; padding:8px 22px; box-shadow:0 8px 20px rgba(0,0,0,.2); }
+  .logo img { height:96px; display:block; }
+  .dur { position:absolute; top:44px; right:40px; text-align:right; color:#fff; }
+  .dur b { display:block; font-size:52px; line-height:1; font-weight:700; color:#ffd23f; }
+  .dur span { font-size:22px; letter-spacing:3px; font-weight:600; }
+  .kick { position:absolute; top:170px; left:40px; color:#9fd0ff; font-size:22px; font-weight:600; letter-spacing:5px; }
+  h1 { position:absolute; top:200px; left:40px; right:40px; color:#fff; font-family:'Anton',sans-serif; font-size:84px; line-height:1.02; letter-spacing:1px; font-weight:400; }
+  h1 span { color:#ffd23f; }
+  .map { position:absolute; top:330px; left:40px; }
+  .itin { position:absolute; top:575px; left:40px; right:40px; background:#fff; border-radius:26px; box-shadow:0 14px 36px rgba(10,79,214,.16); padding:22px 30px; }
+  .itin h2, .incs h2 { font-size:21px; letter-spacing:5px; color:#0a4fd6; font-weight:700; margin-bottom:10px; }
+  .day { display:flex; gap:20px; padding:11px 0; border-top:1.5px dashed #d5e4f7; }
+  .day:first-of-type { border-top:none; }
+  .day .d { flex:none; width:140px; background:#ff6a1a; color:#fff; border-radius:12px; text-align:center; padding:6px 0; font-weight:700; font-size:20px; line-height:1.2; }
+  .day .d small { display:block; font-size:16px; font-weight:500; opacity:.9; }
+  .day .t b { font-size:25px; font-weight:700; }
+  .day .t p { font-size:20px; color:#4a628c; line-height:1.35; }
+  .incs { position:absolute; top:912px; left:40px; right:40px; }
+  .chips { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+  .chip { background:#fff; border:2px solid #cfe2ff; border-radius:30px; padding:7px 10px; font-size:19px; font-weight:600; text-align:center; white-space:nowrap; }
+  .note { position:absolute; top:1098px; left:40px; font-size:22px; color:#3d5a8a; font-weight:500; }
+  .cta { position:absolute; top:1086px; right:40px; background:linear-gradient(90deg,#ffb000,#ff6a1a); color:#fff; border-radius:40px; padding:14px 32px; font-size:25px; font-weight:700; box-shadow:0 8px 20px rgba(255,106,26,.35); }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:150px; background:#0a2f7a; color:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; }
+  .foot .w { font-size:34px; font-weight:700; letter-spacing:3px; color:#ffd23f; }
+  .foot .r { display:flex; gap:40px; font-size:28px; font-weight:600; }
+</style></head><body><div class="p">
+  <div class="logo"><img src="assets/zocean-logo.jpg"></div>
+  <div class="dur"><b>{{DAYS}}</b><span>{{NIGHTS}}</span></div>
+  <div class="kick">{{KICKER}}</div>
+  <h1>{{TITLE}}</h1>
+  {{MAP_SVG}}
+  <div class="itin"><h2>DAY-BY-DAY ITINERARY</h2>{{DAYS_HTML}}</div>
+  <div class="incs"><h2>WHAT'S INCLUDED</h2><div class="chips">{{CHIPS}}</div></div>
+  <div class="note">{{NOTE}}</div>
+  <div class="cta">💬 GET YOUR QUOTE</div>
+  <div class="foot"><div class="w">WWW.Z-OCEANTOURS.COM</div><div class="r"><span>💬 +33 7 51 13 64 73</span><span>✉️ info@zoceantours.com</span></div></div>
+</div></body></html>
