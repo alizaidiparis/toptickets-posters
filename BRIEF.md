@@ -26,6 +26,7 @@ Every morning, make one poster for each brand below and show both to the owner f
 
 ## Design variety and information (owner feedback 2026-11-19: "design or information exact same ban rahe ho, different design, different layout aur more information chahiye, formality mat karo")
 - NEVER use the same layout as the previous post of that brand (check the Layout column in posts-log.md). Brand colours, logo and contact strip stay; the composition must clearly change.
+- 2026-11-19: owner saw the layout B samples (samples/ folder) and approved: "ye wale theek lag rahe, more informative hai, aise hi alag alag daily daalne hai". This informative, varied style is now the standard; the daily task prompt's old "same layout and style" wording is superseded by this section.
 - Layouts so far (rotate, and add new ones):
   - Top Tickets A: centered circle illustration on navy, big title, 2 badges (`toptickets-template.html`).
   - Top Tickets B: header bar, full-width panorama illustration, cream info area with "Tour highlights" (4 numbered) + "Insider tips" (4) cards, badges + CTA row, navy footer (`toptickets-layout-b-split.html`).
