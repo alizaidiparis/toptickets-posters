@@ -39,6 +39,18 @@ Every morning, make one poster for each brand below and show both to the owner f
 - Vary fonts too (installed: Inter, DM Sans, Poppins, Montserrat, Bitter, Anton, Archivo Black, Lora, Crimson Text) and the illustration style.
 - Captions should also carry more information (highlights, itinerary, tips), not only the poster text.
 
+## Strong variety rule (owner feedback 2026-11-21: "You are making same type of posters everyday, same colour, same style ... i need varieties and everyday very different from past day")
+This overrides the "Brand look (keep)" colour lines above. Only the logo, brand name and contact details are fixed; everything else must look very different from the previous days.
+- Before designing, look at the last 3 days' images of that brand (and check the Style column in posts-log.md). Today's poster must differ from ALL of them in: colour palette/background, illustration style, typography, and composition. A different layout letter alone is NOT enough.
+- Colour: do not reuse the same dominant background colour as the last 3 days. Rotate moods, e.g. bright white/minimal, pastel, warm sunset gradient, deep green/forest, terracotta/earth, black & gold luxury, vintage cream paper, bold pop colours, icy winter blue, Mediterranean turquoise. Brand coral/navy (Top Tickets) or blue/orange (Z Ocean) can appear as small accents only.
+- Illustration style: rotate, never two days in a row the same: flat vector scene, line-art/outline, retro travel-poster (big sky, bold shapes), paper-cut layered, isometric, vintage stamp/postcard, map-based, pattern/icon grid, big typographic poster with minimal art, collage of shapes.
+- Format/composition ideas: ticket stub, postcard with stamp, magazine cover, passport page, boarding pass, polaroid wall, "Top 5" list, map journey, split screen, big-number fact poster, FAQ card, calendar/countdown, carousel-style single slide, typographic poster.
+- Fonts: change the headline font every day (Anton, Archivo Black, Bitter, Lora, Crimson Text, Poppins, Montserrat, DM Sans, Inter).
+- The two brands' posters on the same day must also look different from each other.
+- LinkedIn images follow the same idea: do not repeat the colour/background of the previous LinkedIn image of that company.
+- Log the style in the Style column of posts-log.md as "<palette> / <illustration style> / <headline font>".
+- Days so far (for reference): 18-20 Nov all used navy+coral (TT) and blue+orange (ZO) with flat vector scenes, which the owner found repetitive. 21 Nov: TT navy+coral ticket stub flat vector (Archivo Black); ZO night blue + cream flat vector Christmas (Lora). So 22 Nov must move away from navy/blue backgrounds and flat vector scenes for both brands.
+
 ## LinkedIn (B2B, different from Instagram)
 - Pages (Windsor.ai connector `linkedin_organic`): The Top Tickets = `105064529`, Z-Ocean Tours = `90948921`.
 - Audience: B2B travel agents, tour operators, DMCs and corporate travel planners, not end travellers. Content must differ from the Instagram post of the day.
