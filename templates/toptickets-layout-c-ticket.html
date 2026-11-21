@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- The Top Tickets · Layout C "Ticket stub + your day": big ticket card with illustration + stub details, horizontal day timeline, tip cards -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'DM Sans','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1080px; height:1350px; background:#14213a; color:#fff; overflow:hidden; }
+  .glow { position:absolute; right:-200px; top:520px; width:700px; height:700px; border-radius:50%; background:radial-gradient(circle, rgba(217,181,106,.16) 0%, rgba(217,181,106,0) 70%); }
+  .head { position:absolute; top:28px; left:40px; right:40px; height:90px; display:flex; align-items:center; gap:16px; }
+  .head .lg { width:84px; height:84px; background:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; }
+  .head .lg img { width:66px; height:66px; }
+  .head .n { font-family:'Montserrat',sans-serif; font-size:34px; font-weight:800; letter-spacing:2px; }
+  .head .n span { color:#ff6b52; }
+  .head .pill { margin-left:auto; border:2px solid #d9b56a; color:#d9b56a; font-size:21px; font-weight:700; letter-spacing:3px; padding:9px 22px; border-radius:30px; }
+  .ticket { position:absolute; top:140px; left:40px; width:1000px; height:610px; }
+  .main { position:absolute; left:0; top:0; width:740px; height:610px; background:#fbf6ee; border-radius:28px 0 0 28px; overflow:hidden; color:#14213a; }
+  .main svg { display:block; }
+  .main .tt { position:absolute; left:34px; right:30px; top:418px; }
+  .main h1 { font-family:'Archivo Black',sans-serif; font-weight:400; font-size:56px; line-height:1.02; letter-spacing:-.5px; }
+  .main h1 span { color:#ff6b52; }
+  .main p { margin-top:12px; font-size:24px; color:#5b6478; line-height:1.3; }
+  .facts { position:absolute; left:34px; right:30px; top:540px; display:flex; gap:10px; flex-wrap:wrap; }
+  .facts span { background:#14213a; color:#fff; border-radius:24px; padding:8px 16px; font-size:18px; font-weight:700; }
+  .stub { position:absolute; left:740px; top:0; width:260px; height:610px; background:#ff6b52; border-radius:0 28px 28px 0; padding:34px 26px; border-left:4px dashed #fbf6ee; }
+  .notch { position:absolute; left:722px; width:40px; height:40px; border-radius:50%; background:#14213a; }
+  .stub .adm { font-family:'Montserrat',sans-serif; font-weight:800; font-size:20px; letter-spacing:4px; color:#14213a; }
+  .stub .big { font-family:'Archivo Black',sans-serif; font-size:34px; line-height:1; margin:8px 0 22px; }
+  .stub .row { border-top:2px solid rgba(255,255,255,.35); padding:13px 0; font-size:20px; line-height:1.25; }
+  .stub .row small { display:block; font-size:15px; letter-spacing:2px; font-weight:700; color:#14213a; opacity:.8; margin-bottom:3px; }
+  .stub .row b { font-weight:700; }
+  .sec { position:absolute; top:782px; left:40px; font-family:'Montserrat',sans-serif; font-weight:800; font-size:22px; letter-spacing:5px; color:#d9b56a; }
+  .line { position:absolute; top:868px; left:150px; right:150px; height:4px; background:repeating-linear-gradient(90deg,#d9b56a 0 14px,transparent 14px 24px); }
+  .stops { position:absolute; top:828px; left:40px; right:40px; display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  .stop { text-align:center; }
+  .stop .c { width:80px; height:80px; margin:0 auto 10px; border-radius:50%; background:#fbf6ee; border:5px solid #ff6b52; display:flex; align-items:center; justify-content:center; font-size:36px; position:relative; z-index:2; }
+  .stop b { display:block; font-size:25px; font-weight:800; }
+  .stop span { display:block; font-size:19px; color:#c9cfdb; line-height:1.3; margin-top:3px; }
+  .tips { position:absolute; top:1040px; left:40px; right:40px; display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .tip { background:rgba(255,255,255,.07); border:1.5px solid rgba(217,181,106,.4); border-radius:18px; padding:14px 16px; display:flex; gap:12px; align-items:center; font-size:19px; line-height:1.25; }
+  .tip i { font-style:normal; font-size:32px; }
+  .tip b { display:block; font-size:20px; color:#fff; }
+  .tip small { font-size:17px; color:#c9cfdb; }
+  .badges { position:absolute; top:1148px; left:40px; display:flex; gap:12px; }
+  .badge { background:#fff; color:#14213a; border-radius:30px; padding:10px 18px; font-size:20px; font-weight:700; }
+  .badge b { color:#1aa260; margin-right:6px; }
+  .cta { position:absolute; top:1138px; right:40px; background:#ff6b52; color:#fff; border-radius:16px; padding:16px 32px; font-family:'Montserrat',sans-serif; font-size:27px; font-weight:800; box-shadow:0 10px 24px rgba(255,107,82,.35); }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:126px; background:#ff6b52; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; }
+  .foot .w { font-family:'Montserrat',sans-serif; font-size:32px; font-weight:800; letter-spacing:3px; color:#14213a; }
+  .foot .r { display:flex; gap:44px; font-size:27px; font-weight:700; }
+</style></head><body><div class="p">
+  <div class="glow"></div>
+  <div class="head"><div class="lg"><img src="assets/toptickets-logo.png"></div><div class="n">THE <span>TOP</span> TICKETS</div><div class="pill">{{PILL}}</div></div>
+  <div class="ticket">
+    <div class="main">{{HERO_SVG}}<div class="tt"><h1>{{TITLE}}</h1><p>{{SUBTITLE}}</p></div><div class="facts">{{FACTS}}</div></div>
+    <div class="stub"><div class="adm">ADMIT ONE</div><div class="big">{{STUB_BIG}}</div>{{STUB_ROWS}}</div>
+  </div>
+  <div class="notch" style="top:120px"></div><div class="notch" style="top:730px"></div>
+  <div class="sec">{{TIMELINE_TITLE}}</div>
+  <div class="line"></div>
+  <div class="stops">{{STOPS}}</div>
+  <div class="tips">{{TIPS}}</div>
+  <div class="badges">{{BADGES}}</div>
+  <div class="cta">BOOK NOW →</div>
+  <div class="foot"><div class="w">THETOPTICKETS.COM</div><div class="r"><span>💬 +33 7 51 13 64 73</span><span>✉️ contact@thetoptickets.com</span></div></div>
+</div></body></html>

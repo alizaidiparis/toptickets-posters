@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- The Top Tickets · LinkedIn B2B "season + how it works": cream split, product list left, 3-step agent process right -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:1200px; overflow:hidden; font-family:'DM Sans','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1200px; height:1200px; background:#fbf6ee; color:#14213a; overflow:hidden; }
+  .band { position:absolute; top:0; left:0; right:0; height:440px; background:#14213a; }
+  .head { position:absolute; top:40px; left:60px; display:flex; align-items:center; gap:18px; }
+  .head .lg { width:90px; height:90px; background:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; }
+  .head .lg img { width:70px; }
+  .head .n { font-family:'Montserrat',sans-serif; font-size:36px; font-weight:800; letter-spacing:2px; color:#fff; }
+  .head .n span { color:#ff6b52; }
+  .tag { position:absolute; top:62px; right:60px; background:#d9b56a; color:#14213a; font-weight:800; letter-spacing:3px; font-size:20px; padding:12px 22px; border-radius:30px; }
+  h1 { position:absolute; top:170px; left:60px; right:60px; font-family:'Bitter',serif; font-weight:800; font-size:68px; line-height:1.08; color:#fff; }
+  h1 span { color:#ff6b52; }
+  .sub { position:absolute; top:340px; left:60px; right:200px; font-size:27px; color:#c9cfdb; line-height:1.35; }
+  .col { position:absolute; top:480px; background:#fff; border-radius:28px; box-shadow:0 12px 30px rgba(20,33,58,.1); padding:30px 32px; height:470px; }
+  .col h3 { font-family:'Montserrat',sans-serif; font-size:21px; letter-spacing:4px; color:#ff6b52; font-weight:800; margin-bottom:18px; }
+  .it { display:flex; gap:16px; align-items:center; padding:13px 0; border-top:1.5px dashed #ece3d2; }
+  .it:first-of-type { border-top:none; }
+  .it i { font-style:normal; font-size:38px; }
+  .it b { display:block; font-size:25px; }
+  .it small { font-size:19px; color:#6b7385; }
+  .st { display:flex; gap:18px; margin-bottom:22px; }
+  .st .n { flex:none; width:54px; height:54px; border-radius:50%; background:#14213a; color:#fff; font-family:'Montserrat',sans-serif; font-weight:800; font-size:26px; display:flex; align-items:center; justify-content:center; }
+  .st b { display:block; font-size:25px; margin-top:2px; }
+  .st small { font-size:19px; color:#6b7385; line-height:1.3; }
+  .cta { position:absolute; top:982px; left:50%; transform:translateX(-50%); background:#ff6b52; color:#fff; border-radius:60px; padding:20px 50px; font-family:'Montserrat',sans-serif; font-size:30px; font-weight:800; white-space:nowrap; }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:110px; background:#14213a; display:flex; align-items:center; justify-content:center; gap:40px; color:#fff; font-size:25px; font-weight:700; }
+  .foot .w { color:#ff8a73; font-family:'Montserrat',sans-serif; font-weight:800; letter-spacing:2px; }
+</style></head><body><div class="p">
+  <div class="band"></div>
+  <div class="head"><div class="lg"><img src="assets/toptickets-logo.png"></div><div class="n">THE <span>TOP</span> TICKETS</div></div>
+  <div class="tag">{{TAG}}</div>
+  <h1>{{TITLE}}</h1>
+  <div class="sub">{{SUB}}</div>
+  <div class="col" style="left:60px;width:560px"><h3>{{LEFT_TITLE}}</h3>{{LEFT}}</div>
+  <div class="col" style="left:650px;width:490px"><h3>{{RIGHT_TITLE}}</h3>{{RIGHT}}</div>
+  <div class="cta">{{CTA}}</div>
+  <div class="foot"><span class="w">THETOPTICKETS.COM</span><span>💬 +33 7 51 13 64 73</span><span>✉️ contact@thetoptickets.com</span></div>
+</div></body></html>
