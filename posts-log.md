@@ -27,3 +27,9 @@
 | 2026-11-21 | Z Ocean Tours | story of Christmas Markets poster | stories/2026-11-21-christmas-markets-story.jpg | yes | - | - |
 | 2026-11-21 | LinkedIn – The Top Tickets | B2B poster: winter in Europe is busy, how it works for agents | linkedin/2026-11-21-toptickets-b2b-winter.jpg | yes | - | navy + cream / no illustration / Bitter |
 | 2026-11-21 | LinkedIn – Z Ocean Tours | quote card: we plan every detail so your clients never have to | linkedin/2026-11-21-zocean-quote.jpg | yes | - | blue gradient + sun / waves / Lora |
+| 2026-11-22 | The Top Tickets | Paris: Montmartre Guided Walking Tour | toptickets/2026-11-22-montmartre-walking-tour.jpg | yes | D | cream paper + ink brown + burgundy / line-art sketchbook / Crimson Text |
+| 2026-11-22 | Z Ocean Tours | Italian Lakes & Swiss Alps: Milan + Lake Como + Lucerne + Zurich, 7 Days / 6 Nights | zocean/2026-11-22-italian-lakes-swiss-alps.jpg | yes | D | sunset gradient peach→plum / retro travel poster + boarding pass / Anton |
+| 2026-11-22 | The Top Tickets | story of Montmartre poster | stories/2026-11-22-montmartre-walking-tour-story.jpg | yes | - | - |
+| 2026-11-22 | Z Ocean Tours | story of Italian Lakes & Swiss Alps poster | stories/2026-11-22-italian-lakes-swiss-alps-story.jpg | yes | - | - |
+| 2026-11-22 | LinkedIn – The Top Tickets | quote card: your clients remember the view, never the queue | linkedin/2026-11-22-toptickets-quote.jpg | yes | - | black & gold / art-deco lines / Lora italic |
+| 2026-11-22 | LinkedIn – Z Ocean Tours | text story post: planning late Christmas Europe trips (lock the route first, 3 tips for agents) | (text only) | yes | - | - |
