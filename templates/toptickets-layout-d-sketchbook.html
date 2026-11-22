@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- The Top Tickets · Layout D "Sketchbook / field guide": vintage cream paper, ink line-art postcard taped on the page, rubber stamp, "walk at a glance" side notes, 5 numbered stops, tips, ink footer. Palette: cream paper + ink brown + burgundy (coral only as a tiny accent). Headline: Crimson Text. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'DM Sans','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1080px; height:1350px; background:#f3ead6; color:#2b211c; overflow:hidden; }
+  .grain { position:absolute; inset:0; opacity:.35; mix-blend-mode:multiply; }
+  .edge { position:absolute; inset:18px; border:2px solid rgba(43,33,28,.25); border-radius:6px; }
+  .head { position:absolute; top:38px; left:56px; display:flex; align-items:center; gap:14px; }
+  .head img { width:74px; height:74px; }
+  .head .n { font-family:'Montserrat',sans-serif; font-weight:800; font-size:30px; letter-spacing:3px; }
+  .head .n span { color:#e0573f; }
+  .stamp { position:absolute; top:34px; right:52px; width:178px; height:178px; border:4px solid #8c2f39; border-radius:50%; color:#8c2f39; transform:rotate(12deg); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; opacity:.88; }
+  .stamp:before { content:''; position:absolute; inset:8px; border:2px dashed #8c2f39; border-radius:50%; }
+  .stamp b { font-family:'Montserrat',sans-serif; font-weight:800; font-size:17px; letter-spacing:2px; line-height:1.25; }
+  .stamp i { font-family:'Crimson Text',serif; font-size:38px; font-weight:700; font-style:italic; line-height:1; margin:4px 0; }
+  .kick { position:absolute; top:146px; left:56px; font-family:'Montserrat',sans-serif; font-weight:700; font-size:20px; letter-spacing:6px; color:#8c2f39; }
+  h1 { position:absolute; top:168px; left:52px; font-family:'Crimson Text',serif; font-weight:700; font-size:118px; line-height:1; letter-spacing:-1px; }
+  h2 { position:absolute; top:282px; left:56px; font-family:'Crimson Text',serif; font-weight:600; font-style:italic; font-size:52px; color:#8c2f39; }
+  .card { position:absolute; top:378px; left:56px; width:610px; height:452px; background:#fffdf7; padding:18px 18px 0; box-shadow:0 14px 28px rgba(60,40,20,.22); transform:rotate(-2deg); }
+  .card .cap { font-family:'Crimson Text',serif; font-style:italic; font-size:24px; color:#6b5a4e; text-align:center; margin-top:6px; }
+  .tape { position:absolute; width:130px; height:36px; background:rgba(214,190,140,.7); }
+  .side { position:absolute; top:392px; left:712px; width:318px; }
+  .side h3 { font-family:'Montserrat',sans-serif; font-weight:800; font-size:18px; letter-spacing:3px; color:#8c2f39; border-bottom:2px solid #2b211c; padding-bottom:10px; }
+  .row { display:flex; gap:12px; padding:11px 0; border-bottom:1.5px dashed rgba(43,33,28,.35); align-items:flex-start; }
+  .row i { font-style:normal; font-size:30px; line-height:1.1; }
+  .row small { display:block; font-family:'Montserrat',sans-serif; font-weight:700; font-size:14px; letter-spacing:2px; color:#8a7766; }
+  .row b { display:block; font-size:21px; line-height:1.25; }
+  .sec { position:absolute; top:868px; left:56px; right:56px; display:flex; align-items:center; gap:18px; font-family:'Montserrat',sans-serif; font-weight:800; font-size:21px; letter-spacing:5px; color:#2b211c; }
+  .sec:after { content:''; flex:1; border-top:2px solid #2b211c; }
+  .stops { position:absolute; top:912px; left:56px; right:56px; display:grid; grid-template-columns:1fr 1fr; column-gap:36px; row-gap:10px; }
+  .s { display:flex; gap:14px; align-items:flex-start; }
+  .s .num { flex:none; width:48px; height:48px; border-radius:50%; border:2.5px solid #2b211c; font-family:'Crimson Text',serif; font-weight:700; font-size:30px; display:flex; align-items:center; justify-content:center; background:#fffdf7; }
+  .s b { display:block; font-size:23px; line-height:1.15; }
+  .s span { display:block; font-size:18.5px; color:#5e4f45; line-height:1.3; margin-top:2px; }
+  .s.tip { background:#8c2f39; color:#fbeee0; border-radius:14px; padding:10px 14px; }
+  .s.tip span { color:#f3d9cf; }
+  .s.tip .num { background:transparent; border-color:#fbeee0; font-size:24px; }
+  .bot { position:absolute; top:1150px; left:56px; right:56px; display:flex; align-items:center; gap:12px; }
+  .badge { border:2px solid #2b211c; border-radius:30px; padding:9px 18px; font-size:19px; font-weight:700; background:#fffdf7; }
+  .badge b { color:#2e8b57; margin-right:5px; }
+  .cta { margin-left:auto; background:#2b211c; color:#f3ead6; border-radius:40px; padding:16px 30px; font-family:'Montserrat',sans-serif; font-weight:800; font-size:25px; letter-spacing:1px; }
+  .cta span { color:#ff8a70; }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:118px; background:#2b211c; color:#f3ead6; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; }
+  .foot .w { font-family:'Crimson Text',serif; font-weight:700; font-size:36px; letter-spacing:4px; }
+  .foot .r { display:flex; gap:40px; font-size:25px; font-weight:600; }
+</style></head><body><div class="p">
+  <svg class="grain" width="1080" height="1350"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .45  0 0 0 0 .35  0 0 0 0 .25  0 0 0 .55 0"/></filter><rect width="1080" height="1350" filter="url(#n)"/></svg>
+  <div class="edge"></div>
+  <div class="head"><img src="assets/toptickets-logo.png"><div class="n">THE <span>TOP</span> TICKETS</div></div>
+  <div class="stamp"><b>GUIDED</b><i>Walking</i><b>TOUR</b><b style="font-size:13px;letter-spacing:3px">PARIS 18e</b></div>
+  <div class="kick">PARIS · 18TH ARRONDISSEMENT</div>
+  <h1>Montmartre</h1>
+  <h2>the artists' village on the hill</h2>
+
+  <div class="card">
+    <svg width="574" height="384" viewBox="0 0 600 400" fill="none" stroke="#2b211c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="0" y="0" width="600" height="400" fill="#fbf4e4" stroke="none"/>
+      <circle cx="470" cy="92" r="46" fill="#f0b9a6" stroke="none"/>
+      <path d="M140 70 l10 8 l10-8 M175 52 l8 6 l8-6 M520 170 l7 5 l7-5" stroke-width="2.5"/>
+      <!-- windmill -->
+      <path d="M70 300 L82 205 L108 205 L120 300"/><path d="M80 205 Q95 185 110 205"/>
+      <path d="M95 196 L45 150 M95 196 L140 148 M95 196 L52 245 M95 196 L142 242"/>
+      <path d="M45 150 l10-8 M140 148 l8 10 M52 245 l-8-8 M142 242 l8-8" stroke-width="2"/>
+      <rect x="88" y="262" width="14" height="22"/>
+      <!-- campanile -->
+      <path d="M440 300 V128 H468 V300"/><path d="M436 128 Q454 92 472 128"/><path d="M454 100 V82 M447 89 H461"/>
+      <path d="M447 150 v20 M461 150 v20 M447 190 v20 M461 190 v20" stroke-width="2"/>
+      <!-- side domes -->
+      <path d="M232 240 V198 H272 V240"/><path d="M228 198 Q252 150 276 198"/><path d="M252 160 V146"/>
+      <path d="M388 240 V198 H428 V240"/><path d="M384 198 Q408 150 432 198"/><path d="M408 160 V146"/>
+      <!-- main drum + dome -->
+      <path d="M288 240 V160 H372 V240"/>
+      <path d="M302 200 v-18 a6 6 0 0 1 12 0 v18 M324 200 v-18 a6 6 0 0 1 12 0 v18 M346 200 v-18 a6 6 0 0 1 12 0 v18" stroke-width="2"/>
+      <path d="M282 160 Q282 86 330 66 Q378 86 378 160 Z"/>
+      <path d="M306 150 Q308 104 330 80 M354 150 Q352 104 330 80" stroke-width="1.8"/>
+      <path d="M321 66 V48 H339 V66"/><path d="M318 48 Q330 30 342 48"/><path d="M330 36 V20 M323 27 H337"/>
+      <!-- body + porch -->
+      <path d="M210 320 V240 H450 V320"/>
+      <path d="M262 320 V280 a16 16 0 0 1 32 0 V320 M314 320 V272 a16 16 0 0 1 32 0 V320 M366 320 V280 a16 16 0 0 1 32 0 V320"/>
+      <path d="M210 252 H450" stroke-width="2"/>
+      <!-- hill + steps -->
+      <path d="M0 318 Q120 296 210 320 H450 Q530 300 600 312"/>
+      <path d="M250 320 L236 340 H228 L214 362 H204 L190 386 H180 L172 400" stroke-width="2.5"/>
+      <path d="M410 320 L424 340 H432 L446 362 H456 L470 386 H480 L488 400" stroke-width="2.5"/>
+      <path d="M262 340 H398 M250 362 H410 M238 386 H422" stroke-width="1.6"/>
+      <!-- trees -->
+      <path d="M150 318 c-26 2 -34 -34 -10 -40 c-4 -24 30 -32 38 -12 c22 -6 34 22 16 34 c8 20 -24 30 -44 18 z" fill="#c9d3a8"/>
+      <path d="M520 312 c-22 0 -28 -30 -6 -34 c0 -22 32 -24 36 -4 c22 0 24 30 4 34 c-6 14 -26 12 -34 4 z" fill="#c9d3a8"/>
+      <!-- lamp post -->
+      <path d="M560 400 V250 M548 250 H572 L566 228 H554 Z M560 228 V218" stroke-width="3"/>
+      <path d="M552 400 H568" stroke-width="4"/>
+      <!-- hatching -->
+      <path d="M0 360 L30 340 M0 380 L50 346 M0 400 L70 352 M540 400 L600 360 M570 400 L600 380" stroke-width="1.4" opacity=".6"/>
+    </svg>
+    <div class="cap">Sacré-Cœur, the windmills &amp; the old village streets</div>
+    <div class="tape" style="top:-16px;left:-30px;transform:rotate(-28deg)"></div>
+    <div class="tape" style="top:-14px;right:-34px;transform:rotate(26deg)"></div>
+  </div>
+
+  <div class="side">
+    <h3>THE WALK AT A GLANCE</h3>
+    <div class="row"><i>🚶</i><div><small>PACE</small><b>Easy pace, steep cobbled hills</b></div></div>
+    <div class="row"><i>⏱️</i><div><small>PLAN FOR</small><b>About 2 hours</b></div></div>
+    <div class="row"><i>🗣️</i><div><small>WITH</small><b>A local guide &amp; great stories</b></div></div>
+    <div class="row" style="border:0"><i>🌇</i><div><small>BEST TIME</small><b>Morning, or golden-hour light</b></div></div>
+  </div>
+
+  <div class="sec">5 STOPS ON THE WALK</div>
+  <div class="stops">
+    <div class="s"><div class="num">1</div><div><b>Le Mur des Je t'aime</b><span>"I love you" in 250 languages</span></div></div>
+    <div class="s"><div class="num">4</div><div><b>Place du Tertre</b><span>Painters at their easels in the old square</span></div></div>
+    <div class="s"><div class="num">2</div><div><b>Bateau-Lavoir</b><span>Where young Picasso lived &amp; painted</span></div></div>
+    <div class="s"><div class="num">5</div><div><b>Sacré-Cœur Basilica</b><span>White domes &amp; a sweeping view of Paris</span></div></div>
+    <div class="s"><div class="num">3</div><div><b>Moulin de la Galette</b><span>Renoir's windmill &amp; a tiny city vineyard</span></div></div>
+    <div class="s tip"><div class="num">✦</div><div><b>Insider tip</b><span>Comfy shoes, and mind your bag on the busy steps</span></div></div>
+  </div>
+
+  <div class="bot">
+    <div class="badge"><b>✓</b>Instant confirmation</div>
+    <div class="badge"><b>✓</b>Mobile ticket</div>
+    <div class="cta">BOOK YOUR SPOT <span>→</span></div>
+  </div>
+  <div class="foot"><div class="w">THETOPTICKETS.COM</div><div class="r"><span>💬 +33 7 51 13 64 73</span><span>✉️ contact@thetoptickets.com</span></div></div>
+</div></body></html>
