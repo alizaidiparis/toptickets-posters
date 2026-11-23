@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- The Top Tickets · Layout E "Magazine cover": Mediterranean turquoise, magazine masthead, paper-cut layered SVG scene with cover lines, sand "5 things you'll see" panel + terracotta "plan it" sidebar, badges + CTA, terracotta footer. Headline: Poppins 800/900. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'DM Sans','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1080px; height:1350px; background:linear-gradient(180deg,#43d0c4 0%,#1fb2a8 45%,#12968f 100%); color:#0d2f2d; overflow:hidden; }
+  .mast { position:absolute; top:30px; left:48px; right:48px; display:flex; align-items:center; gap:18px; }
+  .mast .lg { width:84px; height:84px; background:#fff; border-radius:22px; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 0 rgba(0,0,0,.12); }
+  .mast .lg img { width:70px; height:70px; }
+  .mast .t { font-family:'Poppins',sans-serif; font-weight:900; font-size:66px; letter-spacing:1px; color:#fff; line-height:1; text-shadow:0 4px 0 rgba(0,0,0,.10); }
+  .mast .t span { color:#ffd25a; }
+  .issue { position:absolute; top:128px; left:48px; right:48px; display:flex; justify-content:space-between; border-top:3px solid #fff; border-bottom:3px solid #fff; padding:8px 2px; font-family:'Poppins',sans-serif; font-weight:700; font-size:17px; letter-spacing:3px; color:#fff; }
+  .scene { position:absolute; top:182px; left:0; width:1080px; height:620px; }
+  .cl { position:absolute; left:48px; top:200px; width:370px; }
+  .cl .c { background:#fff; border-radius:18px; padding:14px 18px; margin-bottom:14px; box-shadow:0 8px 0 rgba(10,60,58,.18); }
+  .cl .c small { display:block; font-family:'Poppins',sans-serif; font-weight:700; font-size:14px; letter-spacing:2.5px; color:#e2643c; }
+  .cl .c b { display:block; font-family:'Poppins',sans-serif; font-weight:700; font-size:23px; line-height:1.2; color:#0d2f2d; }
+  .kick { position:absolute; top:598px; left:48px; background:#ffd25a; color:#0d2f2d; font-family:'Poppins',sans-serif; font-weight:800; font-size:20px; letter-spacing:3px; padding:6px 14px; border-radius:8px; }
+  h1 { position:absolute; top:634px; left:42px; font-family:'Poppins',sans-serif; font-weight:900; font-size:104px; line-height:1; letter-spacing:-3px; color:#fff; text-shadow:0 6px 0 #0b6e69; }
+  .sub { position:absolute; top:748px; left:48px; font-family:'Poppins',sans-serif; font-weight:600; font-size:26px; color:#eafffb; }
+  .panel { position:absolute; top:800px; left:48px; width:620px; height:340px; background:#fbedd5; border-radius:26px; padding:22px 26px; box-shadow:0 10px 0 rgba(10,60,58,.2); }
+  .panel h3, .plan h3 { font-family:'Poppins',sans-serif; font-weight:800; font-size:19px; letter-spacing:3px; margin-bottom:10px; }
+  .panel h3 { color:#e2643c; }
+  .it { display:flex; gap:14px; align-items:flex-start; margin-bottom:6px; }
+  .it .n { flex:none; width:40px; height:40px; border-radius:12px; background:#0f8f88; color:#fff; font-family:'Poppins',sans-serif; font-weight:800; font-size:22px; display:flex; align-items:center; justify-content:center; }
+  .it b { display:block; font-size:21px; line-height:1.15; }
+  .it span { display:block; font-size:17px; line-height:1.25; color:#4f5f5c; }
+  .plan { position:absolute; top:800px; left:690px; width:342px; height:340px; background:#e2643c; color:#fff; border-radius:26px; padding:22px 22px; box-shadow:0 10px 0 rgba(10,60,58,.2); }
+  .plan .r { display:flex; gap:12px; padding:7px 0; border-bottom:1.5px solid rgba(255,255,255,.35); }
+  .plan .r:last-child { border-bottom:none; }
+  .plan .r i { font-style:normal; font-size:26px; line-height:1.1; }
+  .plan .r small { display:block; font-family:'Poppins',sans-serif; font-weight:700; font-size:12.5px; letter-spacing:2px; color:#ffe3d6; }
+  .plan .r b { display:block; font-size:18.5px; line-height:1.22; }
+  .row { position:absolute; top:1160px; left:48px; right:48px; display:flex; align-items:center; gap:10px; }
+  .bd { background:#fff; color:#0d2f2d; font-weight:700; font-size:18px; padding:10px 14px; border-radius:30px; white-space:nowrap; }
+  .cta { margin-left:auto; background:#ffd25a; color:#0d2f2d; font-family:'Poppins',sans-serif; font-weight:800; font-size:22px; padding:13px 24px; border-radius:30px; box-shadow:0 5px 0 #c99a1d; white-space:nowrap; }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:120px; background:#c84f2c; color:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; }
+  .foot .w { font-family:'Poppins',sans-serif; font-weight:800; font-size:30px; letter-spacing:3px; }
+  .foot .c { font-size:22px; font-weight:600; }
+</style></head><body>
+<div class="p" data-chk>
+  <div class="mast"><div class="lg"><img src="assets/toptickets-logo.png"></div><div class="t">THE <span>TOP</span> TICKETS</div></div>
+  <div class="issue"><span>BARCELONA ISSUE</span><span>ATTRACTION TICKETS</span><span>Nº 06</span></div>
+
+  <svg class="scene" viewBox="0 0 1080 620" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="ds" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#06433f" flood-opacity=".35"/></filter>
+    </defs>
+    <!-- sun -->
+    <circle cx="968" cy="86" r="58" fill="#ffd25a" filter="url(#ds)"/>
+    <circle cx="968" cy="86" r="40" fill="#ffe08a"/>
+    <!-- paper clouds -->
+    <g fill="#ffffff" opacity=".9" filter="url(#ds)">
+      <path d="M520 70 q20-34 56-18 q22-26 54 0 q34-4 34 24 h-150z"/>
+      <path d="M760 170 q14-24 40-12 q16-18 38 0 q24-2 24 18 h-108z"/>
+    </g>
+    <!-- back hills -->
+    <path d="M0 340 Q180 270 360 320 T720 300 T1080 290 V620 H0Z" fill="#7fdcd0" filter="url(#ds)"/>
+    <!-- Sagrada Familia: paper-cut spires -->
+    <g filter="url(#ds)" transform="translate(180 15) scale(.82)">
+      <g fill="#f3c98f">
+        <path d="M560 470 V250 q0-14 12-14 h120 q12 0 12 14 V470z"/>
+        <path d="M720 470 V230 q0-12 10-12 h110 q10 0 10 12 V470z"/>
+      </g>
+      <!-- spires (bottle shaped) -->
+      <g fill="#e9b26f">
+        <path d="M575 250 Q575 150 590 90 Q600 60 605 40 Q610 60 620 90 Q635 150 635 250z"/>
+        <path d="M635 250 Q635 140 650 70 Q658 40 662 22 Q666 40 674 70 Q689 140 689 250z"/>
+        <path d="M733 230 Q733 140 748 82 Q756 54 760 36 Q764 54 772 82 Q787 140 787 230z"/>
+        <path d="M787 230 Q787 150 800 98 Q808 70 812 52 Q816 70 824 98 Q837 150 837 230z"/>
+      </g>
+      <!-- central tower behind -->
+      <path d="M688 470 V160 Q688 60 704 10 Q708 -6 712 10 Q728 60 728 160 V470z" fill="#d99a52"/>
+      <circle cx="708" cy="18" r="9" fill="#ffffff"/>
+      <!-- spire tips -->
+      <g fill="#ffffff"><circle cx="605" cy="44" r="7"/><circle cx="662" cy="26" r="7"/><circle cx="760" cy="40" r="7"/><circle cx="812" cy="56" r="7"/></g>
+      <!-- window slits -->
+      <g fill="#b9773a" opacity=".55">
+        <rect x="598" y="120" width="14" height="6" rx="3"/><rect x="598" y="150" width="14" height="6" rx="3"/><rect x="598" y="180" width="14" height="6" rx="3"/>
+        <rect x="655" y="100" width="14" height="6" rx="3"/><rect x="655" y="130" width="14" height="6" rx="3"/><rect x="655" y="160" width="14" height="6" rx="3"/>
+        <rect x="753" y="110" width="14" height="6" rx="3"/><rect x="753" y="140" width="14" height="6" rx="3"/><rect x="753" y="170" width="14" height="6" rx="3"/>
+        <rect x="805" y="130" width="14" height="6" rx="3"/><rect x="805" y="160" width="14" height="6" rx="3"/>
+      </g>
+      <!-- portals with stained glass -->
+      <path d="M600 470 V350 q32-50 64 0 V470z" fill="#2a7f7a"/>
+      <path d="M750 470 V340 q34-52 68 0 V470z" fill="#2a7f7a"/>
+      <g opacity=".95">
+        <path d="M612 400 q20-34 40 0z" fill="#ff7a59"/><path d="M612 400 h40 v20 h-40z" fill="#ffd25a"/>
+        <path d="M762 392 q22-36 44 0z" fill="#59c9ff"/><path d="M762 392 h44 v22 h-44z" fill="#7be08f"/>
+      </g>
+    </g>
+    <!-- palms -->
+    <g filter="url(#ds)" transform="translate(0 -70)">
+      <path d="M1000 470 q-6-90 6-170" stroke="#8a5a2b" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <g fill="#2fa36b"><path d="M1006 300 q-60-20-90 20 q40-8 90-20z"/><path d="M1006 300 q50-40 74-10 q-36-2-74 10z"/><path d="M1006 300 q-20-50 10-70 q4 34-10 70z"/><path d="M1006 300 q40 0 60 40 q-36-18-60-40z"/></g>
+      <path d="M470 470 q-4-60 4-110" stroke="#8a5a2b" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <g fill="#3bb67a"><path d="M474 362 q-44-14-66 14 q30-6 66-14z"/><path d="M474 362 q36-30 54-8 q-26-2-54 8z"/><path d="M474 362 q-14-36 8-50 q2 24-8 50z"/></g>
+    </g>
+    <!-- sea layers -->
+    <path d="M0 400 Q90 380 180 400 T360 400 T540 400 T720 400 T900 400 T1080 400 V620 H0Z" fill="#0f8f88" filter="url(#ds)"/>
+    <path d="M0 470 Q90 453 180 470 T360 470 T540 470 T720 470 T900 470 T1080 470 V620 H0Z" fill="#0b7a74" filter="url(#ds)"/>
+  </svg>
+
+  <div class="cl">
+    <div class="c"><small>INSIDE</small><b>A forest of stone columns</b></div>
+    <div class="c"><small>BEST LIGHT</small><b>Morning blues vs. golden afternoon</b></div>
+  </div>
+
+  <div class="kick">GAUDÍ'S MASTERPIECE · BARCELONA</div>
+  <h1>Sagrada Família</h1>
+  <div class="sub">Entry ticket to the basilica that’s been rising since 1882</div>
+
+  <div class="panel">
+    <h3>5 THINGS YOU'LL SEE</h3>
+    <div class="it"><div class="n">1</div><div><b>Nativity Façade</b><span>The richly carved façade built in Gaudí’s lifetime</span></div></div>
+    <div class="it"><div class="n">2</div><div><b>Passion Façade</b><span>Stark, angular sculptures telling the Passion story</span></div></div>
+    <div class="it"><div class="n">3</div><div><b>Tree-like columns</b><span>Pillars that branch out like a stone forest</span></div></div>
+    <div class="it"><div class="n">4</div><div><b>Stained-glass glow</b><span>Cool blues &amp; greens east, warm reds &amp; oranges west</span></div></div>
+    <div class="it"><div class="n">5</div><div><b>Gaudí’s workshop museum</b><span>Models &amp; drawings showing how it’s built</span></div></div>
+  </div>
+
+  <div class="plan">
+    <h3>PLAN IT</h3>
+    <div class="r"><i>⏱️</i><div><small>ALLOW</small><b>About 1.5–2 hours inside</b></div></div>
+    <div class="r"><i>🕘</i><div><small>TIMED ENTRY</small><b>Book your slot early, popular days sell out</b></div></div>
+    <div class="r"><i>👗</i><div><small>DRESS CODE</small><b>Shoulders &amp; knees covered</b></div></div>
+    <div class="r"><i>🚇</i><div><small>GETTING THERE</small><b>Metro L2 / L5, Sagrada Família stop</b></div></div>
+  </div>
+
+  <div class="row">
+    <div class="bd">⚡ Instant confirmation</div>
+    <div class="bd">📱 Mobile ticket</div>
+    <div class="bd">🏛️ UNESCO-listed</div>
+    <div class="cta">BOOK YOUR SLOT →</div>
+  </div>
+
+  <div class="foot">
+    <div class="w">THETOPTICKETS.COM</div>
+    <div class="c">💬 +33 7 51 13 64 73 &nbsp;&nbsp; ✉️ contact@thetoptickets.com</div>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- Z Ocean Tours · Layout E "Passport page": deep forest green cover with snow pattern, open passport spread on snow-white pages: left page = 3 vintage city stamps (line-art icons, nights, transfers), right page = day-by-day visa log; 8 inclusion "entry stamps" row, who/best-time note + CTA, green footer. Headline: Bitter. Orange only as accent. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'Montserrat','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1080px; height:1350px; background:#123d2e; color:#f4f7f2; overflow:hidden; }
+  .snow { position:absolute; inset:0; }
+  .head { position:absolute; top:32px; left:48px; right:48px; display:flex; align-items:center; justify-content:space-between; }
+  .head .lg { background:#fff; border-radius:16px; padding:6px 12px; }
+  .head .lg img { height:70px; display:block; }
+  .pp { text-align:right; font-family:'Bitter',serif; color:#e9c46a; }
+  .pp b { display:block; font-size:22px; letter-spacing:6px; font-weight:700; }
+  .pp span { font-size:16px; letter-spacing:3px; color:#cfe3d6; font-family:'Montserrat',sans-serif; font-weight:600; }
+  .kick { position:absolute; top:136px; left:48px; font-weight:700; font-size:19px; letter-spacing:5px; color:#ff9f43; }
+  h1 { position:absolute; top:162px; left:44px; font-family:'Bitter',serif; font-weight:800; font-size:78px; line-height:1; letter-spacing:-1px; }
+  h2 { position:absolute; top:256px; left:48px; font-family:'Bitter',serif; font-weight:500; font-style:italic; font-size:34px; color:#cfe3d6; }
+  .days { position:absolute; top:150px; right:48px; width:150px; height:150px; border-radius:50%; background:#ff7a1a; color:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; transform:rotate(-8deg); box-shadow:0 0 0 6px #123d2e, 0 0 0 9px #ff7a1a; }
+  .days b { font-family:'Bitter',serif; font-size:64px; line-height:.9; font-weight:800; }
+  .days span { font-weight:800; font-size:16px; letter-spacing:2px; }
+  .days small { font-weight:600; font-size:14px; letter-spacing:1px; }
+  .book { position:absolute; top:330px; left:40px; right:40px; height:530px; display:flex; filter:drop-shadow(0 14px 18px rgba(0,0,0,.35)); }
+  .pg { flex:1; background:#f7f9f6; color:#173528; padding:22px 24px; position:relative; }
+  .pg.l { border-radius:18px 4px 4px 18px; background:linear-gradient(90deg,#f7f9f6 85%,#e3e9e3); }
+  .pg.r { border-radius:4px 18px 18px 4px; background:linear-gradient(270deg,#f7f9f6 85%,#e3e9e3); }
+  .pg .lab { font-weight:800; font-size:15px; letter-spacing:3px; color:#2d6a4f; border-bottom:2px solid #173528; padding-bottom:8px; margin-bottom:10px; display:flex; justify-content:space-between; }
+  .pg .lab i { font-style:normal; color:#9aa89f; }
+  .st { position:absolute; width:262px; height:150px; border:3px solid; border-radius:10px; padding:8px 10px; display:flex; gap:10px; align-items:center; }
+  .st:before { content:''; position:absolute; inset:4px; border:1.5px dashed; border-color:inherit; border-radius:7px; opacity:.6; }
+  .st svg { flex:none; width:70px; height:70px; }
+  .st b { display:block; font-family:'Bitter',serif; font-weight:800; font-size:24px; line-height:1.05; }
+  .st span { display:block; font-weight:800; font-size:14px; letter-spacing:1.5px; margin-top:4px; }
+  .st small { display:block; font-size:13px; font-weight:600; line-height:1.25; margin-top:4px; color:#4c5d54; }
+  .s1 { top:56px; left:24px; color:#c0392b; border-color:#c0392b; transform:rotate(-4deg); }
+  .s2 { top:200px; left:210px; color:#1d5fa8; border-color:#1d5fa8; transform:rotate(3deg); }
+  .s3 { top:362px; left:30px; color:#2d6a4f; border-color:#2d6a4f; transform:rotate(-2deg); }
+  .lk { position:absolute; font-weight:700; font-size:14px; color:#173528; background:#fff3e6; border:1.5px solid #ff7a1a; padding:4px 9px; border-radius:20px; white-space:nowrap; }
+  .lk1 { top:188px; left:72px; } .lk2 { top:420px; left:318px; }
+  .d { display:flex; gap:10px; padding:10px 0; border-bottom:1.5px dotted #b9c6bd; }
+  .d:last-child { border-bottom:none; }
+  .d .n { flex:none; width:64px; font-weight:800; font-size:13px; letter-spacing:1px; color:#fff; background:#2d6a4f; border-radius:6px; text-align:center; padding:4px 0; height:24px; }
+  .d .n.o { background:#ff7a1a; }
+  .d p { font-size:17.5px; line-height:1.28; font-weight:500; }
+  .d p b { font-weight:800; }
+  .sec { position:absolute; top:884px; left:48px; right:48px; display:flex; align-items:center; gap:16px; font-family:'Bitter',serif; font-weight:700; font-size:24px; letter-spacing:4px; color:#e9c46a; }
+  .sec:after { content:''; flex:1; border-top:2px dashed #e9c46a; }
+  .inc { position:absolute; top:928px; left:48px; right:48px; display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+  .inc div { border:2px solid rgba(233,196,106,.75); border-radius:12px; padding:10px 10px; display:flex; gap:9px; align-items:center; font-weight:700; font-size:16.5px; line-height:1.2; background:rgba(255,255,255,.05); height:66px; }
+  .inc i { font-style:normal; font-size:26px; }
+  .note { position:absolute; top:1092px; left:48px; width:610px; font-size:18px; line-height:1.4; color:#dce9e0; }
+  .note b { color:#ff9f43; }
+  .cta { position:absolute; top:1098px; right:48px; background:#ff7a1a; color:#fff; font-weight:800; font-size:21px; padding:16px 24px; border-radius:40px; text-align:center; line-height:1.2; box-shadow:0 6px 0 #b85310; }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:112px; background:#0b281e; border-top:3px solid #e9c46a; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; }
+  .foot .w { font-family:'Bitter',serif; font-weight:800; font-size:30px; letter-spacing:3px; color:#e9c46a; }
+  .foot .c { font-size:21px; font-weight:600; }
+</style></head><body>
+<div class="p" data-chk>
+  <svg class="snow" viewBox="0 0 1080 1350"><g fill="#ffffff" opacity=".12" font-size="26" font-family="Noto Color Emoji">
+    <text x="420" y="70">❄</text><text x="640" y="120">❄</text><text x="760" y="60">❄</text><text x="560" y="300">❄</text><text x="900" y="320">❄</text><text x="20" y="880">❄</text><text x="1040" y="870">❄</text><text x="700" y="1080">❄</text>
+  </g><g fill="#ffffff" opacity=".18"><circle cx="300" cy="110" r="4"/><circle cx="520" cy="40" r="3"/><circle cx="860" cy="30" r="3"/><circle cx="700" cy="250" r="4"/><circle cx="980" cy="1060" r="3"/><circle cx="30" cy="1080" r="4"/><circle cx="600" cy="140" r="3"/></g></svg>
+
+  <div class="head"><div class="lg"><img src="assets/zocean-logo.jpg"></div><div class="pp"><b>PASSPORT</b><span>NORDIC EDITION · WINTER</span></div></div>
+  <div class="kick">DENMARK · SWEDEN · NORWAY</div>
+  <h1>Scandinavian Winter</h1>
+  <h2>Copenhagen + Stockholm + Oslo</h2>
+  <div class="days"><b>8</b><span>DAYS</span><small>7 NIGHTS</small></div>
+
+  <div class="book">
+    <div class="pg l">
+      <div class="lab">ENTRY STAMPS <i>p. 06</i></div>
+      <div class="st s1">
+        <svg viewBox="0 0 80 80" fill="none" stroke="#c0392b" stroke-width="3" stroke-linejoin="round"><path d="M6 70h68"/><path d="M10 70V36l8-8 8 8v34"/><path d="M26 70V30l8-10 8 10v40"/><path d="M42 70V38l8-8 8 8v32"/><path d="M58 70V32l8-8 8 8v38"/><path d="M15 46h6M15 56h6M31 40h6M31 52h6M47 48h6M47 58h6M63 42h6M63 54h6"/></svg>
+        <div><b>Copenhagen</b><span>2 NIGHTS</span><small>Nyhavn · Tivoli</small></div>
+      </div>
+      <div class="lk lk1">🚆 ~5 h train</div>
+      <div class="st s2">
+        <svg viewBox="0 0 80 80" fill="none" stroke="#1d5fa8" stroke-width="3" stroke-linejoin="round"><path d="M8 52h64l-8 14H16z"/><path d="M40 52V10"/><path d="M40 14l18 14-18 10"/><path d="M28 52V22"/><path d="M28 26l-12 10 12 8"/><path d="M4 74q6-4 12 0t12 0 12 0 12 0 12 0 12 0"/></svg>
+        <div><b>Stockholm</b><span>3 NIGHTS</span><small>Gamla Stan · Vasa</small></div>
+      </div>
+      <div class="lk lk2">✈️ ~1 h flight</div>
+      <div class="st s3">
+        <svg viewBox="0 0 80 80" fill="none" stroke="#2d6a4f" stroke-width="3" stroke-linejoin="round"><path d="M4 66h72"/><path d="M8 66l22-30 14 10 10-16 20 36"/><path d="M30 36v30M44 46v20M54 30v36"/><path d="M4 74q6-4 12 0t12 0 12 0 12 0 12 0 12 0"/></svg>
+        <div><b>Oslo</b><span>2 NIGHTS</span><small>Opera · Vigeland</small></div>
+      </div>
+    </div>
+    <div class="pg r">
+      <div class="lab">TRAVEL LOG · DAY BY DAY <i>p. 07</i></div>
+      <div class="d"><div class="n">DAY 1</div><p><b>Copenhagen</b> arrival &amp; transfer, evening at Nyhavn</p></div>
+      <div class="d"><div class="n">DAY 2</div><p>Canal tour, Strøget &amp; <b>Tivoli Gardens</b> lights</p></div>
+      <div class="d"><div class="n o">DAY 3</div><p>Train across the bridge to <b>Stockholm</b></p></div>
+      <div class="d"><div class="n">DAY 4</div><p>Old town <b>Gamla Stan</b> &amp; Vasa Museum</p></div>
+      <div class="d"><div class="n">DAY 5</div><p>Free day: Djurgården, Fotografiska, fika</p></div>
+      <div class="d"><div class="n o">DAY 6</div><p>Short flight to <b>Oslo</b>, walk the Opera roof</p></div>
+      <div class="d"><div class="n">DAY 7</div><p>Vigeland Park &amp; Holmenkollen ski jump</p></div>
+      <div class="d"><div class="n">DAY 8</div><p>Airport transfer &amp; departure</p></div>
+    </div>
+  </div>
+
+  <div class="sec">WHAT'S INCLUDED</div>
+  <div class="inc">
+    <div><i>🏨</i>7 nights hotel + breakfast</div>
+    <div><i>🚆</i>Copenhagen → Stockholm train</div>
+    <div><i>✈️</i>Stockholm → Oslo flight</div>
+    <div><i>🚐</i>Airport transfers</div>
+    <div><i>🎡</i>Tivoli Gardens entry</div>
+    <div><i>⛵</i>Vasa Museum entry</div>
+    <div><i>🚤</i>Copenhagen canal tour</div>
+    <div><i>💬</i>24/7 WhatsApp support</div>
+  </div>
+
+  <div class="note"><b>Perfect for</b> couples, families &amp; first-timers to the Nordics. <b>Best time:</b> mid-Nov to Dec for Christmas lights &amp; markets, or Jun–Aug for long bright days.</div>
+  <div class="cta">GET YOUR QUOTE<br>ON WHATSAPP</div>
+
+  <div class="foot">
+    <div class="w">WWW.Z-OCEANTOURS.COM</div>
+    <div class="c">💬 +33 7 51 13 64 73 &nbsp;&nbsp; ✉️ info@zoceantours.com</div>
+  </div>
+</div>
+</body></html>
