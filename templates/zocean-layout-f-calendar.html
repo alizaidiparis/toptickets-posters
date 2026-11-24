@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- Z Ocean Tours · Layout F "Trip calendar": pastel lilac background with mint / butter / pink city colour-coding, isometric-ish icon tiles in an 8-day calendar grid, route strip with train times, 8 inclusion pills, plum CTA. Headline: Archivo Black. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'DM Sans','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1080px; height:1350px; background:#ece4ff; color:#2b2346; overflow:hidden; }
+  .blob1 { position:absolute; top:-120px; right:-100px; width:420px; height:420px; border-radius:50%; background:#d9ccff; }
+  .blob2 { position:absolute; top:240px; left:-160px; width:300px; height:300px; border-radius:50%; background:#dff5ea; }
+  .hd { position:absolute; top:30px; left:44px; right:44px; display:flex; align-items:center; }
+  .hd .lg { background:#fff; border-radius:20px; padding:6px 14px; box-shadow:0 6px 18px rgba(80,60,150,.15); }
+  .hd .lg img { height:76px; display:block; }
+  .hd .pill { margin-left:auto; background:#2b2346; color:#fff; border-radius:40px; padding:12px 22px; font-family:'Archivo Black',sans-serif; font-size:24px; letter-spacing:1px; }
+  .hd .pill span { color:#ffd23f; }
+  .kick { position:absolute; top:142px; left:48px; font-weight:800; font-size:18px; letter-spacing:4px; color:#7a5cf0; }
+  h1 { position:absolute; top:170px; left:44px; font-family:'Archivo Black',sans-serif; font-size:84px; line-height:.98; letter-spacing:-2px; }
+  h1 .a { color:#e2557d; } h1 .b { color:#0a4fd6; } h1 .c { color:#e07a00; }
+  h1 .dot { color:#b9a8f5; }
+  .sub { position:absolute; top:350px; left:48px; font-size:25px; font-weight:600; color:#4b4170; }
+  .route { position:absolute; top:398px; left:44px; right:44px; height:92px; background:#fff; border-radius:24px; display:flex; align-items:center; padding:0 22px; box-shadow:0 8px 24px rgba(80,60,150,.12); }
+  .city { display:flex; align-items:center; gap:10px; }
+  .city .dt { width:52px; height:52px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-family:'Archivo Black',sans-serif; font-size:22px; }
+  .city b { display:block; font-size:22px; font-weight:800; line-height:1.05; }
+  .city small { display:block; font-size:16px; color:#6a618c; font-weight:600; }
+  .lnk { flex:1; display:flex; flex-direction:column; align-items:center; font-size:15.5px; font-weight:700; color:#6a618c; }
+  .lnk .ln { width:86%; border-top:3px dashed #b9a8f5; margin:5px 0; }
+  .L { background:#ffd6e2; color:#c23462; } .P { background:#d6e4ff; color:#0a4fd6; } .A { background:#ffe9b8; color:#b25c00; }
+  .cal { position:absolute; top:512px; left:44px; right:44px; display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  .d { height:186px; border-radius:22px; padding:12px 14px; position:relative; overflow:hidden; }
+  .d .h { display:flex; justify-content:space-between; align-items:center; }
+  .d .h b { font-family:'Archivo Black',sans-serif; font-size:19px; letter-spacing:.5px; }
+  .d .h i { font-style:normal; font-size:13px; font-weight:800; letter-spacing:1.5px; background:rgba(255,255,255,.7); padding:3px 8px; border-radius:10px; }
+  .d svg { display:block; width:76px; height:66px; margin:6px 0 4px; }
+  .d p { font-size:16.5px; line-height:1.22; font-weight:600; color:#2b2346; }
+  .inc { position:absolute; top:914px; left:44px; right:44px; background:#fff; border-radius:26px; padding:18px 22px; box-shadow:0 8px 24px rgba(80,60,150,.12); }
+  .inc h3 { font-family:'Archivo Black',sans-serif; font-size:20px; letter-spacing:2px; color:#7a5cf0; margin-bottom:12px; }
+  .inc .g { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+  .inc .g div { background:#f4f0ff; border-radius:14px; padding:9px 10px; display:flex; gap:8px; align-items:center; font-size:16px; font-weight:700; line-height:1.15; height:62px; }
+  .inc .g div i { font-style:normal; font-size:24px; }
+  .note { position:absolute; top:1140px; left:48px; width:660px; font-size:19px; line-height:1.35; color:#3c335e; }
+  .note b { color:#e2557d; }
+  .cta { position:absolute; top:1134px; right:44px; background:linear-gradient(90deg,#ff6a1a,#ffb000); color:#fff; font-family:'Archivo Black',sans-serif; font-size:21px; line-height:1.15; text-align:center; padding:16px 22px; border-radius:22px; box-shadow:0 6px 0 #c2560f; }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:108px; background:#2b2346; color:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; }
+  .foot .w { font-family:'Archivo Black',sans-serif; font-size:28px; letter-spacing:2px; color:#ffd23f; }
+  .foot .c { font-size:21px; font-weight:600; display:flex; gap:34px; }
+</style></head><body>
+<div class="p">
+  <div class="blob1"></div><div class="blob2"></div>
+  <div class="hd"><div class="lg"><img src="assets/zocean-logo.jpg"></div><div class="pill"><span>8</span> DAYS · <span>7</span> NIGHTS</div></div>
+  <div class="kick">UK · FRANCE · NETHERLANDS — BY TRAIN</div>
+  <h1><span class="a">London</span><span class="dot"> ·</span> <span class="b">Paris</span><span class="dot"> ·</span><br><span class="c">Amsterdam</span></h1>
+  <div class="sub">The classic trio: three capitals, one easy rail route.</div>
+
+  <div class="route">
+    <div class="city"><div class="dt L">3N</div><div><b>London</b><small>3 nights</small></div></div>
+    <div class="lnk">🚄 Eurostar ~2h20<div class="ln"></div></div>
+    <div class="city"><div class="dt P">2N</div><div><b>Paris</b><small>2 nights</small></div></div>
+    <div class="lnk">🚆 train ~3h20<div class="ln"></div></div>
+    <div class="city"><div class="dt A">2N</div><div><b>Amsterdam</b><small>2 nights</small></div></div>
+  </div>
+
+  <div class="cal">
+    <div class="d L"><div class="h"><b>DAY 1</b><i>LONDON</i></div>
+      <svg viewBox="0 0 76 66"><rect x="6" y="6" width="62" height="50" rx="8" fill="#e2557d"/><rect x="11" y="12" width="52" height="12" rx="3" fill="#ffe3ea"/><rect x="11" y="30" width="52" height="12" rx="3" fill="#ffe3ea"/><rect x="6" y="26" width="62" height="2" fill="#c23462"/><circle cx="20" cy="58" r="6" fill="#2b2346"/><circle cx="54" cy="58" r="6" fill="#2b2346"/></svg>
+      <p>Arrive, hotel transfer, evening walk on the Thames</p></div>
+    <div class="d L"><div class="h"><b>DAY 2</b><i>LONDON</i></div>
+      <svg viewBox="0 0 76 66"><rect x="30" y="6" width="16" height="54" fill="#c23462"/><polygon points="30,6 38,-2 46,6" fill="#e2557d"/><circle cx="38" cy="20" r="6" fill="#fff"/><rect x="8" y="40" width="22" height="20" fill="#ff9fb8"/><rect x="46" y="40" width="22" height="20" fill="#ff9fb8"/></svg>
+      <p>Westminster, Big Ben &amp; Buckingham Palace</p></div>
+    <div class="d L"><div class="h"><b>DAY 3</b><i>LONDON</i></div>
+      <svg viewBox="0 0 76 66"><circle cx="38" cy="30" r="24" fill="none" stroke="#c23462" stroke-width="5"/><g stroke="#e2557d" stroke-width="2.5"><line x1="38" y1="6" x2="38" y2="54"/><line x1="14" y1="30" x2="62" y2="30"/><line x1="21" y1="13" x2="55" y2="47"/><line x1="55" y1="13" x2="21" y2="47"/></g><polygon points="30,62 38,30 46,62" fill="#c23462"/></svg>
+      <p>London Eye, Tower Bridge &amp; free time</p></div>
+    <div class="d P"><div class="h"><b>DAY 4</b><i>PARIS</i></div>
+      <svg viewBox="0 0 76 66"><rect x="4" y="26" width="68" height="22" rx="11" fill="#0a4fd6"/><rect x="10" y="30" width="44" height="8" rx="3" fill="#cfe0ff"/><path d="M58 26 q14 0 14 11 v11 h-14z" fill="#ffd23f"/><circle cx="18" cy="52" r="5" fill="#2b2346"/><circle cx="56" cy="52" r="5" fill="#2b2346"/><rect x="0" y="58" width="76" height="3" fill="#7aa0f5"/></svg>
+      <p>Eurostar to Paris, evening Seine stroll</p></div>
+    <div class="d P"><div class="h"><b>DAY 5</b><i>PARIS</i></div>
+      <svg viewBox="0 0 76 66"><path d="M38 2 L44 24 L52 46 L60 62 H48 Q38 48 28 62 H16 L24 46 L32 24Z" fill="#0a4fd6"/><rect x="26" y="22" width="24" height="4" fill="#ffd23f"/><rect x="21" y="43" width="34" height="4" fill="#ffd23f"/></svg>
+      <p>Eiffel Tower, Louvre area &amp; Montmartre</p></div>
+    <div class="d A"><div class="h"><b>DAY 6</b><i>AMSTERDAM</i></div>
+      <svg viewBox="0 0 76 66"><rect x="8" y="18" width="16" height="34" fill="#e07a00"/><polygon points="8,18 16,6 24,18" fill="#b25c00"/><rect x="26" y="12" width="16" height="40" fill="#ffb000"/><polygon points="26,12 34,0 42,12" fill="#e07a00"/><rect x="44" y="20" width="16" height="32" fill="#e07a00"/><polygon points="44,20 52,8 60,20" fill="#b25c00"/><rect x="0" y="52" width="76" height="12" fill="#7aa0f5"/></svg>
+      <p>Train to Amsterdam, canal cruise</p></div>
+    <div class="d A"><div class="h"><b>DAY 7</b><i>AMSTERDAM</i></div>
+      <svg viewBox="0 0 76 66"><rect x="32" y="26" width="12" height="36" fill="#b25c00"/><g fill="#ffb000"><polygon points="38,26 40,0 36,0"/><polygon points="38,26 64,24 64,28"/><polygon points="38,26 36,52 40,52"/><polygon points="38,26 12,28 12,24"/></g><circle cx="38" cy="26" r="4" fill="#2b2346"/><rect x="0" y="60" width="76" height="6" fill="#8fd1a8"/></svg>
+      <p>Museum quarter or windmills at Zaanse Schans</p></div>
+    <div class="d" style="background:#dff5ea"><div class="h"><b>DAY 8</b><i>HOME</i></div>
+      <svg viewBox="0 0 76 66"><path d="M6 40 L62 18 Q72 14 72 22 L22 48Z" fill="#2b9a63"/><polygon points="30,30 44,10 50,12 42,34" fill="#6cc99a"/><polygon points="16,44 10,56 16,56 24,46" fill="#6cc99a"/></svg>
+      <p>Breakfast &amp; airport transfer</p></div>
+  </div>
+
+  <div class="inc"><h3>WHAT'S INCLUDED</h3>
+    <div class="g">
+      <div><i>🏨</i>7 nights hotel + breakfast</div>
+      <div><i>🚄</i>Eurostar London → Paris</div>
+      <div><i>🚆</i>Paris → Amsterdam train</div>
+      <div><i>🚐</i>Airport transfers</div>
+      <div><i>🎡</i>London Eye ticket</div>
+      <div><i>🗼</i>Eiffel Tower entry</div>
+      <div><i>🛶</i>Amsterdam canal cruise</div>
+      <div><i>💬</i>24/7 WhatsApp support</div>
+    </div>
+  </div>
+
+  <div class="note"><b>Perfect for</b> first-timers in Europe, couples &amp; families.<br><b>Best time:</b> Apr–Jun, Sep–Oct, or Dec for Christmas lights.</div>
+  <div class="cta">GET YOUR QUOTE<br>ON WHATSAPP →</div>
+  <div class="foot"><div class="w">WWW.Z-OCEANTOURS.COM</div><div class="c"><span>💬 +33 7 51 13 64 73</span><span>✉️ info@zoceantours.com</span></div></div>
+</div>
+</body></html>

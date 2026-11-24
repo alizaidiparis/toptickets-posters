@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- The Top Tickets · Layout F "Polaroid wall": bright white minimal on a faint grid, olive + ochre + black, geometric shape-collage illustrations inside 3 taped polaroids, huge Montserrat 900 title, "What you'll see" list + "Good to know" Q&A, olive footer. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'Inter','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1080px; height:1350px; background:#fbfaf6; color:#1b1b17; overflow:hidden;
+       background-image:linear-gradient(#ecebe3 1px,transparent 1px),linear-gradient(90deg,#ecebe3 1px,transparent 1px); background-size:36px 36px; }
+  .hd { position:absolute; top:34px; left:52px; right:52px; display:flex; align-items:center; gap:16px; }
+  .hd img { width:74px; height:74px; border-radius:18px; }
+  .hd .t { font-family:'Montserrat',sans-serif; font-weight:900; font-size:34px; letter-spacing:1px; }
+  .hd .t span { color:#ff6b52; }
+  .hd .tag { margin-left:auto; border:3px solid #1b1b17; border-radius:40px; padding:8px 18px; font-family:'Montserrat',sans-serif; font-weight:800; font-size:17px; letter-spacing:3px; }
+  .kick { position:absolute; top:142px; left:52px; display:flex; gap:10px; }
+  .kick span { background:#e0a526; color:#1b1b17; font-family:'Montserrat',sans-serif; font-weight:800; font-size:17px; letter-spacing:3px; padding:7px 14px; border-radius:6px; }
+  .kick span.o { background:#5c6b2f; color:#fff; }
+  h1 { position:absolute; top:180px; left:44px; font-family:'Montserrat',sans-serif; font-weight:900; font-size:150px; letter-spacing:-6px; line-height:1; }
+  h1 i { font-style:normal; color:#5c6b2f; }
+  .sub { position:absolute; top:340px; left:52px; font-family:'Montserrat',sans-serif; font-weight:800; font-size:36px; letter-spacing:-.5px; }
+  .desc { position:absolute; top:390px; left:52px; width:600px; font-size:20px; line-height:1.35; color:#55554c; }
+  .sunc { position:absolute; top:318px; right:96px; width:130px; height:130px; border-radius:50%; background:#e0a526; }
+  .sunc2 { position:absolute; top:360px; right:196px; width:96px; height:92px; background:#5c6b2f; clip-path:polygon(50% 0,100% 100%,0 100%); }
+  .sunc3 { position:absolute; top:402px; right:52px; width:100px; height:50px; background:#ff6b52; border-radius:60px 60px 0 0; }
+  .pol { position:absolute; width:318px; background:#fff; padding:16px 16px 0; box-shadow:0 14px 28px rgba(40,40,20,.18),0 2px 4px rgba(40,40,20,.12); }
+  .pol svg { display:block; width:286px; height:262px; }
+  .pol .cap { font-family:'Lora',serif; font-style:italic; font-weight:600; font-size:23px; text-align:center; padding:12px 0 16px; }
+  .tape { position:absolute; top:-16px; left:50%; width:110px; height:32px; margin-left:-55px; background:rgba(224,165,38,.55); transform:rotate(-4deg); }
+  .p1 { top:490px; left:40px; transform:rotate(-5deg); }
+  .p2 { top:472px; left:381px; transform:rotate(3deg); }
+  .p3 { top:500px; left:720px; transform:rotate(-2.5deg); }
+  .info { position:absolute; top:880px; left:52px; right:52px; display:flex; gap:22px; }
+  .card { background:#fff; border:3px solid #1b1b17; border-radius:22px; padding:18px 22px; box-shadow:8px 8px 0 #1b1b17; }
+  .card h3 { font-family:'Montserrat',sans-serif; font-weight:900; font-size:19px; letter-spacing:3px; margin-bottom:10px; }
+  .see { width:520px; } .see h3 { color:#5c6b2f; }
+  .see .it { display:flex; gap:12px; margin-bottom:7px; }
+  .see .it b.n { flex:none; width:34px; height:34px; border-radius:50%; background:#e0a526; font-family:'Montserrat',sans-serif; font-weight:900; font-size:18px; display:flex; align-items:center; justify-content:center; }
+  .see .it div b { display:block; font-size:19.5px; line-height:1.15; }
+  .see .it div span { display:block; font-size:15.5px; color:#66665c; line-height:1.25; }
+  .faq { flex:1; background:#5c6b2f; color:#fff; border-color:#1b1b17; } .faq h3 { color:#ffd77a; }
+  .faq .q { padding:7px 0; border-bottom:1.5px dashed rgba(255,255,255,.4); }
+  .faq .q:last-child { border-bottom:none; }
+  .faq .q small { display:block; font-family:'Montserrat',sans-serif; font-weight:800; font-size:13.5px; letter-spacing:1.5px; color:#ffd77a; }
+  .faq .q b { display:block; font-size:18px; line-height:1.25; font-weight:600; }
+  .row { position:absolute; top:1186px; left:52px; right:52px; display:flex; gap:10px; align-items:center; }
+  .bd { border:2.5px solid #1b1b17; background:#fff; font-weight:700; font-size:17px; padding:9px 14px; border-radius:30px; white-space:nowrap; }
+  .cta { margin-left:auto; background:#ff6b52; color:#fff; font-family:'Montserrat',sans-serif; font-weight:900; font-size:21px; letter-spacing:1px; padding:13px 24px; border-radius:30px; border:3px solid #1b1b17; box-shadow:4px 4px 0 #1b1b17; white-space:nowrap; }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:96px; background:#1b1b17; color:#fff; display:flex; align-items:center; justify-content:center; gap:34px; font-size:21px; font-weight:600; }
+  .foot .w { font-family:'Montserrat',sans-serif; font-weight:900; letter-spacing:2px; color:#e0a526; font-size:24px; }
+</style></head><body>
+<div class="p">
+  <div class="hd"><img src="assets/toptickets-logo.png"><div class="t">THE <span>TOP</span> TICKETS</div><div class="tag">ATHENS · GREECE</div></div>
+  <div class="sunc"></div><div class="sunc2"></div><div class="sunc3"></div>
+  <div class="kick"><span>GUIDED TOUR</span><span class="o">ANCIENT GREECE</span></div>
+  <h1>ACROPOLIS<i>.</i></h1>
+  <div class="sub">&amp; Parthenon Guided Tour</div>
+  <div class="desc">Climb the sacred rock with a guide and hear the stories behind 2,500 years of temples, gods and democracy.</div>
+
+  <!-- Polaroid 1: Parthenon (geometric collage) -->
+  <div class="pol p1"><div class="tape"></div>
+    <svg viewBox="0 0 286 262">
+      <rect width="286" height="262" fill="#8fc3d9"/>
+      <circle cx="226" cy="60" r="34" fill="#e0a526"/>
+      <path d="M0 200 L70 150 L150 175 L230 140 L286 165 V262 H0Z" fill="#5c6b2f"/>
+      <rect x="0" y="212" width="286" height="50" fill="#3f4a1f"/>
+      <g fill="#f5efe0">
+        <polygon points="48,118 143,78 238,118"/>
+        <rect x="52" y="118" width="182" height="12"/>
+        <rect x="60" y="134" width="14" height="66"/><rect x="88" y="134" width="14" height="66"/><rect x="116" y="134" width="14" height="66"/>
+        <rect x="144" y="134" width="14" height="66"/><rect x="172" y="134" width="14" height="66"/><rect x="200" y="134" width="14" height="66"/>
+        <rect x="48" y="200" width="190" height="12"/>
+      </g>
+      <polygon points="66,114 143,86 220,114" fill="#e7dcc0"/>
+    </svg>
+    <div class="cap">the Parthenon</div></div>
+
+  <!-- Polaroid 2: Caryatids (Erechtheion) -->
+  <div class="pol p2"><div class="tape" style="transform:rotate(5deg)"></div>
+    <svg viewBox="0 0 286 262">
+      <rect width="286" height="262" fill="#f3c96b"/>
+      <rect x="0" y="210" width="286" height="52" fill="#5c6b2f"/>
+      <rect x="34" y="60" width="218" height="18" fill="#f5efe0"/>
+      <rect x="28" y="44" width="230" height="16" fill="#e7dcc0"/>
+      <g fill="#f5efe0">
+        <g><circle cx="62" cy="96" r="13"/><rect x="50" y="78" width="24" height="10"/><path d="M48 110 h28 l6 100 h-40z"/></g>
+        <g><circle cx="112" cy="96" r="13"/><rect x="100" y="78" width="24" height="10"/><path d="M98 110 h28 l6 100 h-40z"/></g>
+        <g><circle cx="162" cy="96" r="13"/><rect x="150" y="78" width="24" height="10"/><path d="M148 110 h28 l6 100 h-40z"/></g>
+        <g><circle cx="212" cy="96" r="13"/><rect x="200" y="78" width="24" height="10"/><path d="M198 110 h28 l6 100 h-40z"/></g>
+      </g>
+      <g stroke="#cfc2a0" stroke-width="2"><line x1="58" y1="130" x2="54" y2="200"/><line x1="108" y1="130" x2="104" y2="200"/><line x1="158" y1="130" x2="154" y2="200"/><line x1="208" y1="130" x2="204" y2="200"/></g>
+      <rect x="20" y="208" width="246" height="14" fill="#e7dcc0"/>
+    </svg>
+    <div class="cap">the Caryatids</div></div>
+
+  <!-- Polaroid 3: view over Athens to Lycabettus -->
+  <div class="pol p3"><div class="tape" style="transform:rotate(-8deg)"></div>
+    <svg viewBox="0 0 286 262">
+      <rect width="286" height="262" fill="#ff9c7a"/>
+      <rect y="0" width="286" height="90" fill="#ffc29a"/>
+      <circle cx="70" cy="96" r="40" fill="#ffe08a"/>
+      <polygon points="150,170 205,62 260,170" fill="#5c6b2f"/>
+      <rect x="200" y="54" width="10" height="14" fill="#fff"/><polygon points="198,54 205,44 212,54" fill="#fff"/>
+      <g fill="#fff">
+        <rect x="0" y="160" width="40" height="40"/><rect x="44" y="172" width="34" height="30"/><rect x="82" y="150" width="30" height="52"/>
+        <rect x="116" y="168" width="44" height="34"/><rect x="164" y="158" width="32" height="44"/><rect x="200" y="170" width="40" height="32"/><rect x="244" y="156" width="42" height="46"/>
+      </g>
+      <g fill="#f0e6d2"><rect x="0" y="198" width="286" height="64"/></g>
+      <g fill="#e0a526"><rect x="10" y="214" width="22" height="16"/><rect x="60" y="222" width="22" height="16"/><rect x="120" y="212" width="22" height="16"/><rect x="190" y="224" width="22" height="16"/><rect x="246" y="214" width="22" height="16"/></g>
+      <g fill="#1b1b17" opacity=".75"><rect x="8" y="170" width="8" height="10"/><rect x="90" y="162" width="8" height="10"/><rect x="172" y="168" width="8" height="10"/><rect x="254" y="168" width="8" height="10"/></g>
+    </svg>
+    <div class="cap">Athens at golden hour</div></div>
+
+  <div class="info">
+    <div class="card see"><h3>WHAT YOU'LL SEE</h3>
+      <div class="it"><b class="n">1</b><div><b>Propylaea gateway</b><span>The monumental marble entrance to the rock</span></div></div>
+      <div class="it"><b class="n">2</b><div><b>The Parthenon</b><span>Temple of Athena, icon of classical Greece</span></div></div>
+      <div class="it"><b class="n">3</b><div><b>Erechtheion &amp; Caryatids</b><span>Six maidens holding up the porch roof</span></div></div>
+      <div class="it"><b class="n">4</b><div><b>Temple of Athena Nike</b><span>Plus views to Lycabettus &amp; the sea</span></div></div>
+    </div>
+    <div class="card faq"><h3>GOOD TO KNOW</h3>
+      <div class="q"><small>☀️ BEST TIME</small><b>Go early morning or late afternoon, softer light, fewer crowds</b></div>
+      <div class="q"><small>👟 WEAR</small><b>Grippy shoes (the marble is slippery), hat &amp; water</b></div>
+      <div class="q"><small>🚇 GETTING THERE</small><b>Metro Line 2 to Akropoli station</b></div>
+    </div>
+  </div>
+
+  <div class="row"><span class="bd">✅ Instant confirmation</span><span class="bd">🎧 Expert guide</span><span class="bd">📱 Mobile ticket</span><span class="cta">BOOK NOW →</span></div>
+  <div class="foot"><span class="w">THETOPTICKETS.COM</span><span>💬 +33 7 51 13 64 73</span><span>✉️ contact@thetoptickets.com</span></div>
+</div>
+</body></html>
