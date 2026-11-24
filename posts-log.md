@@ -33,3 +33,9 @@
 | 2026-11-22 | Z Ocean Tours | story of Italian Lakes & Swiss Alps poster | stories/2026-11-22-italian-lakes-swiss-alps-story.jpg | yes | - | - |
 | 2026-11-22 | LinkedIn – The Top Tickets | quote card: your clients remember the view, never the queue | linkedin/2026-11-22-toptickets-quote.jpg | yes | - | black & gold / art-deco lines / Lora italic |
 | 2026-11-22 | LinkedIn – Z Ocean Tours | text story post: planning late Christmas Europe trips (lock the route first, 3 tips for agents) | (text only) | yes | - | - |
+| 2026-11-24 | The Top Tickets | Athens: Acropolis & Parthenon Guided Tour | toptickets/2026-11-24-acropolis-guided-tour.jpg | yes | F | white grid paper + olive + ochre / geometric-collage polaroid wall / Montserrat |
+| 2026-11-24 | Z Ocean Tours | London + Paris + Amsterdam (classic trio by train), 8 Days / 7 Nights | zocean/2026-11-24-london-paris-amsterdam.jpg | yes | F | pastel lilac + mint/pink/butter / trip calendar with icon tiles / Archivo Black |
+| 2026-11-24 | The Top Tickets | story of Acropolis poster | stories/2026-11-24-acropolis-story.jpg | yes | - | - |
+| 2026-11-24 | Z Ocean Tours | story of London + Paris + Amsterdam poster | stories/2026-11-24-london-paris-amsterdam-story.jpg | yes | - | - |
+| 2026-11-24 | LinkedIn – The Top Tickets | B2B poster: one partner for Europe's top experiences (6-city grid) | linkedin/2026-11-24-toptickets-b2b-partner-cities.jpg | yes | - | deep plum + peach / city icon grid / Anton |
+| 2026-11-24 | LinkedIn – Z Ocean Tours | quote card: a great itinerary is the one with the right pace | linkedin/2026-11-24-zocean-quote-right-pace.jpg | yes | - | sage green + cream / line-art horizon + train / Crimson Text italic |
