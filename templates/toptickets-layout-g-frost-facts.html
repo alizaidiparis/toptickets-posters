@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- The Top Tickets · Layout G "Frost facts": icy winter blue, low-poly (faceted triangle) mountain + castle hero panel, Bitter headline, 3 big-number fact tiles, "Your day" vertical timeline + "Winter tips" card, coral CTA, deep ink-teal footer. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'Inter','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1080px; height:1350px; background:linear-gradient(180deg,#f2f8fd 0%,#dcebf6 100%); color:#0f2a3d; overflow:hidden; }
+  .hd { position:absolute; top:26px; left:44px; right:44px; height:70px; display:flex; align-items:center; }
+  .hd img { height:58px; }
+  .hd .nm { margin-left:14px; font-family:'Bitter',serif; font-weight:800; font-size:30px; letter-spacing:3px; }
+  .hd .nm span { color:#ff6b52; }
+  .hd .pl { margin-left:auto; font-weight:700; font-size:17px; letter-spacing:3px; color:#2f6c93; border:2px solid #9cc4de; background:#fff; border-radius:30px; padding:10px 20px; }
+  .hero { position:absolute; top:108px; left:40px; width:1000px; height:470px; border-radius:30px; overflow:hidden; box-shadow:0 18px 40px rgba(30,80,120,.18); }
+  .hero svg { display:block; }
+  .tag { position:absolute; top:24px; left:24px; background:#fff; color:#0f2a3d; font-weight:800; font-size:16px; letter-spacing:3px; padding:10px 16px; border-radius:12px; }
+  .tag b { color:#ff6b52; }
+  .kick { position:absolute; top:602px; left:48px; font-weight:800; font-size:17px; letter-spacing:4px; color:#2f6c93; }
+  h1 { position:absolute; top:628px; left:44px; font-family:'Bitter',serif; font-weight:900; font-size:86px; line-height:1; letter-spacing:-1.5px; }
+  h1 span { color:#2f6c93; font-weight:300; font-style:italic; }
+  .sub { position:absolute; top:730px; left:48px; width:980px; font-size:23px; line-height:1.4; color:#33536b; }
+  .facts { position:absolute; top:808px; left:44px; right:44px; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .f { background:#fff; border-radius:22px; padding:10px 20px; border-bottom:6px solid #9cc4de; height:114px; }
+  .f b { display:block; font-family:'Bitter',serif; font-weight:900; font-size:42px; line-height:1; color:#0f2a3d; }
+  .f b i { font-style:normal; color:#ff6b52; }
+  .f span { display:block; margin-top:5px; font-size:16.5px; line-height:1.3; color:#46667e; font-weight:500; }
+  .cols { position:absolute; top:938px; left:44px; right:44px; display:grid; grid-template-columns:1.15fr 1fr; gap:16px; }
+  .card { border-radius:24px; padding:18px 22px; height:242px; }
+  .day { background:#fff; }
+  .card h3 { font-family:'Bitter',serif; font-weight:800; font-size:22px; letter-spacing:1px; margin-bottom:10px; }
+  .st { display:flex; gap:12px; align-items:flex-start; margin-bottom:8px; }
+  .st i { font-style:normal; flex:0 0 104px; background:#e5f0f8; color:#2f6c93; font-weight:800; font-size:14px; letter-spacing:1px; text-align:center; border-radius:8px; padding:4px 0; margin-top:1px; }
+  .st p { font-size:17.5px; line-height:1.28; font-weight:500; }
+  .tips { background:#0f2a3d; color:#e8f3fb; }
+  .tips h3 { color:#9fd3f5; }
+  .tips p { font-size:17px; line-height:1.32; margin-bottom:9px; padding-left:30px; position:relative; }
+  .tips p::before { content:attr(data-e); position:absolute; left:0; top:0; }
+  .row { position:absolute; top:1190px; left:44px; right:44px; display:flex; align-items:center; gap:10px; }
+  .bd { background:#fff; border:2px solid #b8d6ea; border-radius:30px; padding:9px 15px; font-size:17px; font-weight:700; }
+  .cta { margin-left:auto; background:#ff6b52; color:#fff; font-family:'Bitter',serif; font-weight:800; font-size:24px; letter-spacing:2px; padding:14px 28px; border-radius:16px; box-shadow:0 6px 0 #c94a35; }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:92px; background:#0f2a3d; color:#fff; display:flex; align-items:center; justify-content:center; gap:40px; font-size:22px; font-weight:600; }
+  .foot .w { font-family:'Bitter',serif; font-weight:800; letter-spacing:2px; color:#9fd3f5; }
+</style></head><body>
+<div class="p">
+  <div class="hd"><img src="assets/toptickets-logo.png"><div class="nm">THE <span>TOP</span> TICKETS</div><div class="pl">MUNICH → BAVARIAN ALPS</div></div>
+
+  <div class="hero">
+    <svg width="1000" height="470" viewBox="0 0 1000 470">
+      <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fc3e6"/><stop offset="1" stop-color="#e6f3fb"/></linearGradient></defs>
+      <rect width="1000" height="470" fill="url(#sky)"/>
+      <circle cx="820" cy="90" r="46" fill="#fff7e0" opacity=".9"/>
+      <!-- far low-poly peaks -->
+      <polygon points="0,300 90,170 170,260" fill="#b9d8ee"/><polygon points="90,170 170,260 210,190" fill="#a3c9e4"/>
+      <polygon points="170,300 290,120 400,290" fill="#c9e2f3"/><polygon points="290,120 400,290 340,300" fill="#a9cde7"/>
+      <polygon points="290,120 260,170 320,165" fill="#fff"/>
+      <polygon points="560,300 700,100 860,300" fill="#c4dff2"/><polygon points="700,100 860,300 780,300" fill="#9dc5e2"/>
+      <polygon points="700,100 668,148 740,150" fill="#fff"/>
+      <polygon points="820,300 930,170 1000,250 1000,300" fill="#b5d5ec"/><polygon points="930,170 1000,250 1000,300 960,300" fill="#97c0de"/>
+      <!-- mid faceted ridge -->
+      <polygon points="0,470 0,330 120,270 260,330 360,250 470,300 470,470" fill="#5f97bf"/>
+      <polygon points="120,270 260,330 170,380" fill="#4e86b0"/><polygon points="360,250 470,300 400,360" fill="#4a80a9"/>
+      <polygon points="0,330 120,270 60,390" fill="#6ea3c8"/>
+      <!-- castle rock -->
+      <polygon points="380,470 470,300 560,270 640,300 720,470" fill="#3f7099"/>
+      <polygon points="470,300 560,270 540,380" fill="#5487b0"/><polygon points="560,270 640,300 600,400" fill="#355f86"/>
+      <polygon points="470,300 540,380 430,420" fill="#4a7ca5"/>
+      <!-- snow facets on rock -->
+      <polygon points="470,300 505,300 490,330" fill="#eef7fd"/><polygon points="610,290 640,300 625,320" fill="#eef7fd"/>
+      <!-- castle -->
+      <g>
+        <rect x="488" y="196" width="150" height="86" fill="#f7f4ee"/>
+        <rect x="488" y="196" width="150" height="86" fill="url(#none)"/>
+        <polygon points="482,198 563,160 644,198" fill="#3d5f86"/>
+        <rect x="610" y="150" width="34" height="132" fill="#efe9df"/>
+        <polygon points="604,152 627,104 650,152" fill="#2f4f75"/>
+        <rect x="455" y="176" width="40" height="106" fill="#ece5d9"/>
+        <polygon points="449,178 475,128 501,178" fill="#2f4f75"/>
+        <rect x="532" y="120" width="22" height="80" fill="#f7f4ee"/>
+        <polygon points="528,122 543,84 558,122" fill="#2f4f75"/>
+        <rect x="640" y="214" width="54" height="68" fill="#ece5d9"/>
+        <polygon points="636,216 667,190 698,216" fill="#3d5f86"/>
+        <g fill="#7fa9cb"><rect x="505" y="214" width="10" height="18" rx="5"/><rect x="527" y="214" width="10" height="18" rx="5"/><rect x="549" y="214" width="10" height="18" rx="5"/><rect x="571" y="214" width="10" height="18" rx="5"/><rect x="593" y="214" width="10" height="18" rx="5"/>
+        <rect x="505" y="246" width="10" height="18" rx="5"/><rect x="527" y="246" width="10" height="18" rx="5"/><rect x="549" y="246" width="10" height="18" rx="5"/><rect x="571" y="246" width="10" height="18" rx="5"/><rect x="593" y="246" width="10" height="18" rx="5"/>
+        <rect x="621" y="170" width="12" height="20" rx="6"/><rect x="466" y="196" width="12" height="18" rx="6"/><rect x="538" y="136" width="10" height="16" rx="5"/><rect x="660" y="232" width="10" height="16" rx="5"/></g>
+        <rect x="452" y="278" width="246" height="10" fill="#d8cfc0"/>
+        <polygon points="452,288 698,288 664,338 486,338" fill="#466f96"/><polygon points="452,288 560,288 486,338" fill="#5a86ad"/>
+      </g>
+      <!-- front snowy facets + low-poly pines -->
+      <polygon points="0,470 0,410 180,380 330,430 330,470" fill="#eaf4fb"/><polygon points="180,380 330,430 250,470" fill="#d3e6f3"/>
+      <polygon points="650,470 780,390 1000,360 1000,470" fill="#eaf4fb"/><polygon points="780,390 1000,360 900,470" fill="#d6e8f4"/>
+      <g>
+        <polygon points="70,420 98,330 126,420" fill="#2b5b56"/><polygon points="98,330 126,420 98,420" fill="#1f4844"/>
+        <polygon points="130,430 152,360 174,430" fill="#356c66"/><polygon points="152,360 174,430 152,430" fill="#264f4a"/>
+        <polygon points="800,420 830,320 860,420" fill="#2b5b56"/><polygon points="830,320 860,420 830,420" fill="#1f4844"/>
+        <polygon points="870,410 892,340 914,410" fill="#356c66"/><polygon points="892,340 914,410 892,410" fill="#264f4a"/>
+        <polygon points="930,420 956,345 982,420" fill="#2b5b56"/><polygon points="956,345 982,420 956,420" fill="#1f4844"/>
+        <polygon points="98,330 88,362 108,362" fill="#fff"/><polygon points="830,320 819,352 841,352" fill="#fff"/><polygon points="956,345 946,372 966,372" fill="#fff"/>
+      </g>
+      <g fill="#fff" opacity=".9"><circle cx="60" cy="60" r="4"/><circle cx="160" cy="110" r="3"/><circle cx="240" cy="40" r="5"/><circle cx="420" cy="80" r="3"/><circle cx="470" cy="30" r="4"/><circle cx="620" cy="50" r="3"/><circle cx="700" cy="30" r="4"/><circle cx="930" cy="60" r="3"/><circle cx="960" cy="130" r="4"/><circle cx="380" cy="160" r="3"/><circle cx="740" cy="180" r="3"/><circle cx="30" cy="200" r="3"/></g>
+    </svg>
+    <div class="tag">❄ <b>WINTER</b> DAY TRIP</div>
+  </div>
+
+  <div class="kick">DAY TRIP FROM MUNICH · BAVARIA, GERMANY</div>
+  <h1>Neuschwanstein <span>Castle</span></h1>
+  <div class="sub">Ride out of Munich into the snowy Alpine foothills to King Ludwig II's fairy-tale castle above the village of Hohenschwangau.</div>
+
+  <div class="facts">
+    <div class="f"><b>18<i>69</i></b><span>Foundation stone laid by the “Fairy-tale King” Ludwig II</span></div>
+    <div class="f"><b>~2<i>h</i></b><span>Scenic drive from Munich to the castle near Füssen</span></div>
+    <div class="f"><b>18<i>86</i></b><span>Ludwig dies; the castle is never fully finished</span></div>
+  </div>
+
+  <div class="cols">
+    <div class="card day"><h3>Your day</h3>
+      <div class="st"><i>MORNING</i><p>Leave Munich, Bavarian villages &amp; Alpine views</p></div>
+      <div class="st"><i>MIDDAY</i><p>Hohenschwangau village below the castle</p></div>
+      <div class="st"><i>AFTERNOON</i><p>Neuschwanstein visit &amp; the classic view of the towers</p></div>
+      <div class="st"><i>EVENING</i><p>Back in Munich in time for dinner</p></div>
+    </div>
+    <div class="card tips"><h3>Winter tips</h3>
+      <p data-e="🧤">Dress warm: it is colder up by the castle than in Munich</p>
+      <p data-e="⏰">Castle entry is by timed slot, so book ahead</p>
+      <p data-e="🌉">Mary's Bridge can close in snow or ice</p>
+      <p data-e="🥾">Boots with grip: the uphill path can be icy</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="bd">🚌 From Munich</div><div class="bd">📱 Mobile ticket</div><div class="bd">✅ Instant confirmation</div>
+    <div class="cta">BOOK NOW →</div>
+  </div>
+  <div class="foot"><span class="w">THETOPTICKETS.COM</span><span>💬 +33 7 51 13 64 73</span><span>✉️ contact@thetoptickets.com</span></div>
+</div>
+</body></html>
