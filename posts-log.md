@@ -39,3 +39,9 @@
 | 2026-11-24 | Z Ocean Tours | story of London + Paris + Amsterdam poster | stories/2026-11-24-london-paris-amsterdam-story.jpg | yes | - | - |
 | 2026-11-24 | LinkedIn – The Top Tickets | B2B poster: one partner for Europe's top experiences (6-city grid) | linkedin/2026-11-24-toptickets-b2b-partner-cities.jpg | yes | - | deep plum + peach / city icon grid / Anton |
 | 2026-11-24 | LinkedIn – Z Ocean Tours | quote card: a great itinerary is the one with the right pace | linkedin/2026-11-24-zocean-quote-right-pace.jpg | yes | - | sage green + cream / line-art horizon + train / Crimson Text italic |
+| 2026-11-25 | The Top Tickets | Neuschwanstein Castle Day Trip from Munich | toptickets/2026-11-25-neuschwanstein-day-trip.jpg | yes | G | icy winter blue + coral accent / low-poly faceted / Bitter |
+| 2026-11-25 | Z Ocean Tours | Classic Italy: Rome + Florence + Venice, 8 Days / 7 Nights | zocean/2026-11-25-rome-florence-venice.jpg | yes | G | terracotta + cream + espresso / vintage postcards + stamps / Lora |
+| 2026-11-25 | The Top Tickets | story of Neuschwanstein poster | stories/2026-11-25-neuschwanstein-story.jpg | yes | - | - |
+| 2026-11-25 | Z Ocean Tours | story of Classic Italy poster | stories/2026-11-25-rome-florence-venice-story.jpg | yes | - | - |
+| 2026-11-25 | LinkedIn – The Top Tickets | text story post: winter timed-entry slots, 3 tips for agents | (text only) | yes | - | - |
+| 2026-11-25 | LinkedIn – Z Ocean Tours | B2B poster: get ahead on Europe 2027 (6 ready routes) | linkedin/2026-11-25-zocean-b2b-europe-2027.jpg | yes | - | charcoal + mustard / dotted route-line art / Montserrat 900 |
