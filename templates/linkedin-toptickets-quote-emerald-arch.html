@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- LinkedIn · The Top Tickets quote card: deep emerald + cream, line-art arch window with a city skyline inside, Inter Display (light + black) typographic quote. 1200x1200. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:1200px; overflow:hidden; font-family:'Inter Display','Inter',sans-serif; }
+  .p { position:relative; width:1200px; height:1200px; background:#0e3b2e; color:#f4ecd8; overflow:hidden; }
+  .grain { position:absolute; inset:0; background-image:radial-gradient(rgba(244,236,216,.06) 1.5px, transparent 2px); background-size:22px 22px; }
+  .hd { position:absolute; top:60px; left:72px; right:72px; display:flex; align-items:center; }
+  .hd img { height:64px; background:#f4ecd8; border-radius:14px; padding:4px; }
+  .hd .nm { margin-left:16px; font-weight:800; font-size:24px; letter-spacing:5px; }
+  .hd .tg { margin-left:auto; font-size:17px; letter-spacing:4px; font-weight:600; color:#c9b98a; border:1.5px solid #c9b98a; border-radius:30px; padding:10px 20px; }
+  .arch { position:absolute; top:190px; right:72px; width:420px; height:600px; }
+  .q { position:absolute; top:230px; left:72px; width:600px; }
+  .q .mk { font-family:'Lora',serif; font-size:160px; line-height:.6; color:#e8a96b; height:70px; }
+  .q p { font-weight:300; font-size:78px; line-height:1.04; letter-spacing:-2px; }
+  .q p b { font-weight:900; color:#f4ecd8; }
+  .q p span { font-weight:900; color:#e8a96b; }
+  .line { position:absolute; top:880px; left:72px; width:120px; height:4px; background:#e8a96b; }
+  .by { position:absolute; top:906px; left:72px; width:1000px; font-size:26px; line-height:1.45; color:#cfd9cf; font-weight:400; }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:110px; border-top:1.5px solid rgba(244,236,216,.25); display:flex; align-items:center; padding:0 60px; gap:26px; font-size:20px; white-space:nowrap; font-weight:500; color:#f4ecd8; }
+  .foot .w { font-weight:800; letter-spacing:2px; color:#e8a96b; }
+  .foot .r { margin-left:auto; font-weight:700; letter-spacing:1.5px; font-size:16px; background:#e8a96b; color:#0e3b2e; padding:12px 20px; border-radius:10px; }
+</style></head><body>
+<div class="p">
+  <div class="grain"></div>
+  <div class="hd"><img src="assets/toptickets-logo.png"><div class="nm">THE TOP TICKETS</div><div class="tg">FOR TRAVEL AGENTS</div></div>
+
+  <svg class="arch" width="420" height="600" viewBox="0 0 420 600">
+    <defs><clipPath id="ac"><path d="M30 600 V210 A180 180 0 0 1 390 210 V600Z"/></clipPath></defs>
+    <path d="M30 600 V210 A180 180 0 0 1 390 210 V600" fill="none" stroke="#c9b98a" stroke-width="3"/>
+    <path d="M6 600 V210 A204 204 0 0 1 414 210 V600" fill="none" stroke="#c9b98a" stroke-width="1.5" opacity=".6"/>
+    <g clip-path="url(#ac)">
+      <rect x="0" y="0" width="420" height="600" fill="#124636"/>
+      <circle cx="210" cy="250" r="78" fill="none" stroke="#e8a96b" stroke-width="3"/>
+      <g stroke="#e8a96b" stroke-width="2" opacity=".7"><path d="M210 140 v-30 M290 170 l20 -20 M130 170 l-20 -20 M320 250 h30 M100 250 h-30"/></g>
+      <!-- skyline line art: dome, tower, bridge -->
+      <g fill="none" stroke="#f4ecd8" stroke-width="3" stroke-linejoin="round">
+        <path d="M30 470 H70 V400 H100 V470 H120 V360 A40 40 0 0 1 200 360 V470 H220 V320 L240 260 L260 320 V470 H290 V420 H330 V380 H350 V470 H390"/>
+        <path d="M160 320 v-20 M150 360 h20 M134 400 h52 M134 430 h52"/>
+        <path d="M230 360 h20 M230 400 h20 M230 430 h20"/>
+        <path d="M30 520 Q120 470 210 520 Q300 470 390 520"/>
+        <path d="M70 520 v-24 M120 506 v-30 M300 506 v-30 M350 520 v-24"/>
+      </g>
+      <g stroke="#c9b98a" stroke-width="2" opacity=".6"><path d="M30 560 h360 M60 580 h300"/></g>
+    </g>
+  </svg>
+
+  <div class="q">
+    <div class="mk">“</div>
+    <p><b>Itineraries</b> sell the trip.<br><span>Experiences</span> sell the next one.</p>
+  </div>
+
+  <div class="line"></div>
+  <div class="by">The guided tour, the skip-the-line entry, the day trip that ran on time: that's what clients tell their friends about, and why they book with you again.</div>
+
+  <div class="foot"><span class="w">THETOPTICKETS.COM</span><span>💬 +33 7 51 13 64 73</span><span>✉️ contact@thetoptickets.com</span><span class="r">AGENT RATES ON REQUEST</span></div>
+</div>
+</body></html>
