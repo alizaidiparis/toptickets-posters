@@ -45,3 +45,9 @@
 | 2026-11-25 | Z Ocean Tours | story of Classic Italy poster | stories/2026-11-25-rome-florence-venice-story.jpg | yes | - | - |
 | 2026-11-25 | LinkedIn – The Top Tickets | text story post: winter timed-entry slots, 3 tips for agents | (text only) | yes | - | - |
 | 2026-11-25 | LinkedIn – Z Ocean Tours | B2B poster: get ahead on Europe 2027 (6 ready routes) | linkedin/2026-11-25-zocean-b2b-europe-2027.jpg | yes | - | charcoal + mustard / dotted route-line art / Montserrat 900 |
+| 2026-11-26 | The Top Tickets | Sintra Day Trip from Lisbon (Pena Palace, Regaleira, Moorish Castle, Cabo da Roca) | toptickets/2026-11-26-sintra-day-trip.jpg | yes | H | sunflower yellow + black + crimson / screen-print halftone + azulejo tiles / Anton |
+| 2026-11-26 | Z Ocean Tours | The Adriatic Escape: Ljubljana + Lake Bled + Plitvice + Split + Dubrovnik (Slovenia + Croatia), 8 Days / 7 Nights | zocean/2026-11-26-slovenia-croatia-adriatic.jpg | yes | H | white minimal + Adriatic teal + orange / map journey line-art / Crimson Text |
+| 2026-11-26 | The Top Tickets | story of Sintra poster | stories/2026-11-26-sintra-story.jpg | yes | - | - |
+| 2026-11-26 | Z Ocean Tours | story of Adriatic Escape poster | stories/2026-11-26-slovenia-croatia-story.jpg | yes | - | - |
+| 2026-11-26 | LinkedIn – The Top Tickets | quote card: itineraries sell the trip, experiences sell the next one | linkedin/2026-11-26-toptickets-quote-experiences.jpg | yes | - | deep emerald + cream / line-art arch skyline / Inter Display |
+| 2026-11-26 | LinkedIn – Z Ocean Tours | text story post: shoulder-season trend for 2027, 3 tips for agents | (text only) | yes | - | - |
