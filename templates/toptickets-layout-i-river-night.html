@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- The Top Tickets · Layout I "River route by night": black + champagne gold + rose accent, gold line-art skyline over a wide night river (hero), Lora serif headline with italic gold words, horizontal "from the deck" river-route strip with 5 landmark stops, 3 good-to-know cards, outlined badges + coral CTA, black footer with gold rule. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'DM Sans','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1080px; height:1350px; background:#0c0b10; color:#f3ead6; overflow:hidden; }
+  .hd { position:absolute; top:0; left:0; right:0; height:100px; display:flex; align-items:center; padding:0 44px; border-bottom:1px solid rgba(217,181,106,.35); }
+  .hd img { height:62px; background:#fff; border-radius:14px; padding:3px; }
+  .hd .nm { margin-left:16px; font-family:'Lora',serif; font-weight:700; font-size:30px; letter-spacing:4px; color:#f3ead6; }
+  .hd .nm span { color:#ff6b52; }
+  .hd .pl { margin-left:auto; font-weight:700; font-size:16px; letter-spacing:4px; color:#d9b56a; border:1.5px solid #d9b56a; border-radius:30px; padding:9px 18px; }
+  .hero { position:absolute; top:100px; left:0; width:1080px; height:520px; }
+  .kick { position:absolute; top:640px; left:48px; font-weight:700; font-size:17px; letter-spacing:6px; color:#e88fa6; }
+  h1 { position:absolute; top:668px; left:44px; font-family:'Lora',serif; font-weight:700; font-size:92px; line-height:1; color:#f3ead6; letter-spacing:-1px; }
+  h1 i { font-weight:400; color:#d9b56a; }
+  .sub { position:absolute; top:780px; left:48px; right:48px; font-size:20px; line-height:1.3; color:#cfc5b0; }
+  .route { position:absolute; top:822px; left:44px; right:44px; height:184px; border:1px solid rgba(217,181,106,.35); border-radius:22px; padding:18px 26px; background:linear-gradient(180deg,#15131c,#0f0e14); }
+  .route h3 { font-family:'Lora',serif; font-style:italic; font-weight:400; font-size:26px; color:#d9b56a; }
+  .route h3 b { font-family:'DM Sans',sans-serif; font-style:normal; font-size:15px; letter-spacing:4px; color:#8f8775; font-weight:700; margin-left:12px; }
+  .route svg { position:absolute; left:26px; top:58px; }
+  .stops { position:absolute; left:26px; right:26px; top:100px; display:grid; grid-template-columns:repeat(5,1fr); text-align:center; }
+  .stops div strong { display:block; font-size:18px; color:#f3ead6; font-weight:700; margin-bottom:4px; }
+  .stops div { font-size:15px; line-height:1.3; color:#a9a08c; padding:0 6px; }
+  .cards { position:absolute; top:1018px; left:44px; right:44px; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .c { height:132px; border-radius:18px; background:#f3ead6; color:#1b1720; padding:16px 18px; }
+  .c b { display:block; font-size:14px; letter-spacing:3px; color:#b0425f; font-weight:800; margin-bottom:6px; }
+  .c p { font-size:17px; line-height:1.32; font-weight:500; }
+  .c em { font-style:normal; font-size:22px; float:right; }
+  .row { position:absolute; top:1176px; left:44px; right:44px; display:flex; align-items:center; gap:10px; }
+  .bd { border:1.5px solid #d9b56a; color:#f3ead6; border-radius:30px; padding:9px 16px; font-size:16.5px; font-weight:700; }
+  .cta { margin-left:auto; background:#ff6b52; color:#fff; font-weight:800; font-size:22px; letter-spacing:3px; padding:14px 30px; border-radius:40px; box-shadow:0 8px 24px rgba(255,107,82,.35); }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:92px; background:#050507; border-top:2px solid #d9b56a; color:#f3ead6; display:flex; align-items:center; justify-content:center; gap:40px; font-size:21px; font-weight:600; }
+  .foot .w { font-family:'Lora',serif; font-weight:700; color:#d9b56a; font-size:24px; letter-spacing:1px; }
+</style></head><body>
+<div class="p">
+  <div class="hd"><img src="assets/toptickets-logo.png"><div class="nm">THE <span>TOP</span> TICKETS</div><div class="pl">BUDAPEST · HUNGARY</div></div>
+
+  <svg class="hero" width="1080" height="520" viewBox="0 0 1080 520">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c0b10"/><stop offset=".6" stop-color="#1c1626"/><stop offset="1" stop-color="#2a1d2c"/></linearGradient>
+      <linearGradient id="riv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1420"/><stop offset="1" stop-color="#0c0b10"/></linearGradient>
+      <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#d9b56a" stop-opacity=".35"/><stop offset="1" stop-color="#d9b56a" stop-opacity="0"/></radialGradient>
+    </defs>
+    <rect width="1080" height="520" fill="url(#sky)"/>
+    <!-- stars -->
+    <g fill="#f3ead6" opacity=".7"><circle cx="80" cy="50" r="1.6"/><circle cx="190" cy="90" r="1.2"/><circle cx="300" cy="40" r="1.8"/><circle cx="420" cy="80" r="1.2"/><circle cx="610" cy="36" r="1.5"/><circle cx="720" cy="96" r="1.2"/><circle cx="860" cy="60" r="1.7"/><circle cx="980" cy="110" r="1.3"/><circle cx="1030" cy="40" r="1.2"/><circle cx="520" cy="120" r="1"/><circle cx="140" cy="150" r="1"/></g>
+    <!-- moon -->
+    <circle cx="930" cy="80" r="30" fill="none" stroke="#d9b56a" stroke-width="2"/>
+    <path d="M918 56 a30 30 0 0 0 0 48 a24 24 0 0 1 0 -48z" fill="#d9b56a"/>
+    <!-- glows -->
+    <ellipse cx="330" cy="290" rx="300" ry="120" fill="url(#glow)"/>
+    <ellipse cx="860" cy="250" rx="200" ry="110" fill="url(#glow)"/>
+
+    <!-- Buda hill + castle (right) -->
+    <g fill="none" stroke="#d9b56a" stroke-width="2.2" stroke-linejoin="round">
+      <path d="M640 330 Q720 250 800 230 Q900 210 1080 250"/>
+      <!-- castle palace -->
+      <path d="M760 236 v-40 h180 v36"/>
+      <path d="M830 196 v-30 h40 v30"/>
+      <path d="M826 166 Q850 120 874 166"/>
+      <path d="M850 128 v-20"/>
+      <g stroke-width="1.6"><path d="M776 214 v14 M796 214 v14 M816 214 v14 M884 214 v14 M904 214 v14 M924 214 v14"/><path d="M842 180 v10 M858 180 v10"/></g>
+      <!-- Fisherman's bastion turrets -->
+      <path d="M690 262 v-26 l10 -16 l10 16 v26"/><path d="M716 252 v-22 l8 -14 l8 14 v22"/><path d="M670 276 v-18 l7 -11 l7 11 v18"/>
+      <!-- Liberty statue on Gellert -->
+      <path d="M1000 236 v-60"/><path d="M1000 176 l-8 -16 M1000 176 l10 -18"/><path d="M990 236 h20"/>
+    </g>
+
+    <!-- Parliament (left, line-art) -->
+    <g fill="none" stroke="#d9b56a" stroke-width="2.2" stroke-linejoin="round">
+      <path d="M40 330 v-60 h560 v60"/>
+      <path d="M60 270 v-26 h480 v26"/>
+      <!-- central dome -->
+      <path d="M250 244 v-36 h100 v36"/>
+      <path d="M244 208 Q300 120 356 208"/>
+      <path d="M300 140 v-50"/><path d="M300 84 l5 8 l-5 8 l-5 -8z"/>
+      <path d="M268 208 Q300 156 332 208" stroke-width="1.4"/>
+      <!-- spires -->
+      <g><path d="M70 244 l8 -46 l8 46"/><path d="M130 244 l7 -38 l7 38"/><path d="M190 244 l7 -34 l7 34"/><path d="M400 244 l7 -34 l7 34"/><path d="M460 244 l7 -38 l7 38"/><path d="M514 244 l8 -46 l8 46"/></g>
+      <path d="M224 244 l6 -58 l6 58"/><path d="M364 244 l6 -58 l6 58"/>
+      <!-- arches -->
+      <g stroke-width="1.5"><path d="M72 330 v-28 a8 8 0 0 1 16 0 v28"/><path d="M108 330 v-28 a8 8 0 0 1 16 0 v28"/><path d="M144 330 v-28 a8 8 0 0 1 16 0 v28"/><path d="M180 330 v-28 a8 8 0 0 1 16 0 v28"/><path d="M216 330 v-28 a8 8 0 0 1 16 0 v28"/><path d="M368 330 v-28 a8 8 0 0 1 16 0 v28"/><path d="M404 330 v-28 a8 8 0 0 1 16 0 v28"/><path d="M440 330 v-28 a8 8 0 0 1 16 0 v28"/><path d="M476 330 v-28 a8 8 0 0 1 16 0 v28"/><path d="M512 330 v-28 a8 8 0 0 1 16 0 v28"/><path d="M548 330 v-28 a8 8 0 0 1 16 0 v28"/></g>
+      <g stroke-width="1.2"><path d="M262 230 v12 M282 230 v12 M318 230 v12 M338 230 v12"/></g>
+    </g>
+    <!-- window lights -->
+    <g fill="#d9b56a"><rect x="98" y="282" width="6" height="8"/><rect x="150" y="282" width="6" height="8"/><rect x="202" y="282" width="6" height="8"/><rect x="392" y="282" width="6" height="8"/><rect x="444" y="282" width="6" height="8"/><rect x="496" y="282" width="6" height="8"/><rect x="560" y="282" width="6" height="8"/><rect x="290" y="222" width="20" height="10"/></g>
+
+    <!-- Chain Bridge (center-right, crossing) -->
+    <g fill="none" stroke="#e88fa6" stroke-width="2.4">
+      <path d="M560 360 H1080"/>
+      <path d="M640 360 v-64 h26 v64 M640 316 h26"/><path d="M644 296 a9 9 0 0 1 18 0"/>
+      <path d="M900 360 v-64 h26 v64 M900 316 h26"/><path d="M904 296 a9 9 0 0 1 18 0"/>
+      <path d="M560 330 Q600 352 640 298"/><path d="M666 298 Q783 372 900 298"/><path d="M926 298 Q1000 352 1080 326"/>
+      <g stroke-width="1.2"><path d="M700 322 v38 M740 336 v24 M783 340 v20 M826 336 v24 M866 322 v38"/></g>
+    </g>
+    <g fill="#e88fa6"><circle cx="680" cy="316" r="2.4"/><circle cx="720" cy="330" r="2.4"/><circle cx="760" cy="338" r="2.4"/><circle cx="806" cy="338" r="2.4"/><circle cx="846" cy="330" r="2.4"/><circle cx="886" cy="316" r="2.4"/></g>
+
+    <!-- river -->
+    <rect x="0" y="360" width="1080" height="160" fill="url(#riv)"/>
+    <path d="M0 360 H1080" stroke="#d9b56a" stroke-width="1.5" opacity=".6"/>
+    <!-- reflections -->
+    <g stroke="#d9b56a" stroke-linecap="round" opacity=".55">
+      <path d="M90 382 h60 M210 392 h40 M290 384 h90 M300 404 h60 M420 394 h50 M520 384 h40" stroke-width="3"/>
+      <path d="M120 420 h30 M270 428 h50 M310 446 h24 M450 422 h30" stroke-width="2" opacity=".6"/>
+      <path d="M800 384 h60 M840 404 h36 M960 392 h40" stroke-width="3"/>
+    </g>
+    <g stroke="#e88fa6" stroke-linecap="round" opacity=".5" stroke-width="2.5"><path d="M680 380 h40 M760 396 h60 M900 380 h30"/></g>
+
+    <!-- cruise boat -->
+    <g transform="translate(360 430)">
+      <path d="M0 22 H300 L280 52 H24 Z" fill="#0c0b10" stroke="#f3ead6" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M36 22 v-26 h210 v26" fill="#0c0b10" stroke="#f3ead6" stroke-width="2.2"/>
+      <path d="M70 -4 v-16 h130 v16" fill="#0c0b10" stroke="#f3ead6" stroke-width="2"/>
+      <g fill="#d9b56a"><rect x="50" y="2" width="20" height="12" rx="2"/><rect x="80" y="2" width="20" height="12" rx="2"/><rect x="110" y="2" width="20" height="12" rx="2"/><rect x="140" y="2" width="20" height="12" rx="2"/><rect x="170" y="2" width="20" height="12" rx="2"/><rect x="200" y="2" width="20" height="12" rx="2"/></g>
+      <path d="M210 -20 v-18" stroke="#f3ead6" stroke-width="2"/><path d="M210 -38 l18 6 l-18 6" fill="#e88fa6"/>
+    </g>
+    <text x="48" y="500" font-family="Lora" font-style="italic" font-size="20" fill="#8f8775">Parliament · Chain Bridge · Buda Castle — lit up after dark</text>
+  </svg>
+
+  <div class="kick">EVENING RIVER CRUISE</div>
+  <h1>Danube <i>by Night</i></h1>
+  <div class="sub">Glide past Budapest's golden landmarks as the riverfront lights up: the city's most magical hour.</div>
+
+  <div class="route">
+    <h3>From the deck <b>WHAT YOU'LL SEE</b></h3>
+    <svg width="940" height="40" viewBox="0 0 940 40">
+      <path d="M10 20 Q120 4 235 20 T470 20 T705 20 T930 20" fill="none" stroke="#d9b56a" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round"/>
+      <g fill="#0c0b10" stroke="#d9b56a" stroke-width="3"><circle cx="94" cy="14" r="10"/><circle cx="282" cy="22" r="10"/><circle cx="470" cy="20" r="10"/><circle cx="658" cy="18" r="10"/><circle cx="846" cy="22" r="10"/></g>
+      <g fill="#e88fa6"><circle cx="94" cy="14" r="4"/><circle cx="282" cy="22" r="4"/><circle cx="470" cy="20" r="4"/><circle cx="658" cy="18" r="4"/><circle cx="846" cy="22" r="4"/></g>
+    </svg>
+    <div class="stops">
+      <div><strong>Parliament</strong>Neo-Gothic icon, glowing gold</div>
+      <div><strong>Margaret Island</strong>Green island mid-river</div>
+      <div><strong>Chain Bridge</strong>The city's famous lit bridge</div>
+      <div><strong>Buda Castle</strong>&amp; Fisherman's Bastion</div>
+      <div><strong>Gellért Hill</strong>Liberty Statue above the river</div>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="c"><em>🌇</em><b>BEST TIME</b><p>Book a sunset or after-dark slot. In winter it's dark by ~4:30 pm.</p></div>
+    <div class="c"><em>🧣</em><b>WHAT TO BRING</b><p>A warm layer for the open deck &amp; your phone for night photos.</p></div>
+    <div class="c"><em>🎄</em><b>PAIR IT WITH</b><p>Christmas markets at Vörösmarty Square &amp; St. Stephen's.</p></div>
+  </div>
+
+  <div class="row"><span class="bd">📱 Mobile ticket</span><span class="bd">⚡ Instant confirmation</span><span class="bd">↩️ Free cancellation</span><span class="cta">BOOK NOW</span></div>
+
+  <div class="foot"><span class="w">thetoptickets.com</span><span>💬 +33 7 51 13 64 73</span><span>✉️ contact@thetoptickets.com</span></div>
+</div>
+</body></html>

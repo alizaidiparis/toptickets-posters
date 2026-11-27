@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- Z Ocean Tours · Layout I "Island hop split": deep olive + cream + lemon + cobalt accents, paper-cut layered island scene in a tall rounded panel (left), Poppins 800 title + vertical ferry-route stack (right), cream day-by-day card beside a lemon 8-inclusion card, perfect-for/best-time note + orange CTA, dark olive footer. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'Poppins','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1080px; height:1350px; background:#4b5a2c; color:#f7f1de; overflow:hidden; }
+  .leaf { position:absolute; inset:0; opacity:.08; }
+  .hd { position:absolute; top:0; left:0; right:0; height:108px; background:#f7f1de; display:flex; align-items:center; padding:0 44px; color:#2f3a18; }
+  .hd img { height:72px; border-radius:12px; }
+  .hd .nm { margin-left:14px; font-weight:800; font-size:24px; letter-spacing:3px; }
+  .hd .dn { margin-left:auto; background:#4b5a2c; color:#f7f1de; border-radius:40px; padding:10px 22px; font-weight:700; font-size:19px; letter-spacing:2px; }
+  .hd .dn b { color:#f4c430; }
+  .art { position:absolute; top:132px; left:40px; width:500px; height:590px; border-radius:30px; overflow:hidden; box-shadow:0 18px 40px rgba(0,0,0,.35); }
+  .kick { position:absolute; top:138px; left:574px; font-weight:700; font-size:16px; letter-spacing:4px; color:#f4c430; }
+  h1 { position:absolute; top:164px; left:570px; width:480px; font-weight:800; font-size:64px; line-height:1.02; letter-spacing:-1.5px; color:#fff; }
+  h1 span { color:#f4c430; }
+  .sub { position:absolute; top:376px; left:574px; width:466px; font-size:18px; line-height:1.42; color:#e3dcc2; font-weight:400; }
+  .stack { position:absolute; top:462px; left:574px; width:466px; }
+  .st { display:flex; align-items:center; gap:14px; background:#f7f1de; color:#2f3a18; border-radius:16px; height:58px; padding:0 16px; }
+  .st i { font-style:normal; width:36px; height:36px; border-radius:50%; background:#1f4fb8; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:17px; }
+  .st b { font-weight:800; font-size:20px; letter-spacing:1px; }
+  .st small { font-size:15px; color:#5b6440; font-weight:500; }
+  .st .n { white-space:nowrap; margin-left:auto; background:#f4c430; color:#2f3a18; font-weight:800; font-size:15px; border-radius:20px; padding:4px 12px; }
+  .leg { height:30px; margin-left:32px; border-left:2.5px dashed #f4c430; padding-left:20px; display:flex; align-items:center; font-size:14.5px; font-weight:600; color:#f7f1de; }
+  .cols { position:absolute; top:748px; left:40px; right:40px; display:grid; grid-template-columns:520px 1fr; gap:18px; }
+  .card { height:372px; border-radius:24px; padding:20px 24px; }
+  .days { background:#f7f1de; color:#2f3a18; }
+  .card h3 { font-weight:800; font-size:16px; letter-spacing:4px; margin-bottom:10px; }
+  .days h3 { color:#1f4fb8; }
+  .d { display:flex; gap:12px; margin-bottom:11px; align-items:baseline; }
+  .d b { flex:0 0 62px; font-weight:800; font-size:16px; color:#4b5a2c; letter-spacing:.5px; }
+  .d p { font-size:17px; line-height:1.3; font-weight:500; }
+  .inc { background:#f4c430; color:#2f3a18; }
+  .inc h3 { color:#2f3a18; }
+  .g { display:grid; grid-template-columns:1fr; gap:6px; }
+  .g div { display:flex; gap:10px; align-items:center; font-size:16px; line-height:1.2; font-weight:600; background:rgba(255,255,255,.45); border-radius:12px; padding:0 10px; height:34.5px; }
+  .g div em { font-style:normal; font-size:20px; flex:0 0 24px; }
+  .note { position:absolute; top:1150px; left:44px; width:600px; font-size:17.5px; line-height:1.45; color:#e9e3cc; }
+  .note b { color:#f4c430; }
+  .cta { position:absolute; top:1142px; right:40px; width:350px; background:#ff6a1a; color:#fff; text-align:center; font-weight:800; font-size:20px; letter-spacing:1.5px; line-height:1.25; padding:15px 18px; border-radius:18px; box-shadow:0 8px 20px rgba(0,0,0,.3); }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:92px; background:#2a3313; color:#f7f1de; display:flex; align-items:center; justify-content:center; gap:36px; font-size:21px; font-weight:500; }
+  .foot .w { font-weight:800; letter-spacing:1px; color:#f4c430; }
+</style></head><body>
+<div class="p">
+  <svg class="leaf" width="1080" height="1350"><defs><pattern id="lf" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M20 70 Q30 40 60 30 Q50 60 20 70Z" fill="#f7f1de"/><path d="M20 70 L60 30" stroke="#4b5a2c" stroke-width="2"/></pattern></defs><rect width="1080" height="1350" fill="url(#lf)"/></svg>
+  <div class="hd"><img src="assets/zocean-logo.jpg"><div class="nm">Z OCEAN TOURS</div><div class="dn"><b>8</b> DAYS · <b>7</b> NIGHTS</div></div>
+
+  <svg class="art" width="500" height="590" viewBox="0 0 500 590">
+    <defs>
+      <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#0b1a3a" flood-opacity=".35"/></filter>
+      <filter id="sh2" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#3a2a00" flood-opacity=".3"/></filter>
+    </defs>
+    <!-- sky layers -->
+    <rect width="500" height="590" fill="#ffe7a3"/>
+    <circle cx="370" cy="130" r="74" fill="#f4c430" filter="url(#sh2)"/>
+    <circle cx="370" cy="130" r="50" fill="#ffd95a"/>
+    <path d="M0 200 Q120 170 230 196 Q360 226 500 190 V590 H0Z" fill="#ffd0a0" filter="url(#sh2)"/>
+    <!-- far island -->
+    <path d="M250 300 Q330 240 420 262 Q470 270 500 290 V340 H250Z" fill="#9aa86a" filter="url(#sh)"/>
+    <!-- sea layers -->
+    <path d="M0 300 Q125 280 250 300 T500 296 V590 H0Z" fill="#6f9bf0" filter="url(#sh)"/>
+    <!-- cliff with village -->
+    <path d="M0 250 Q60 236 120 250 Q180 262 220 300 Q240 340 230 380 L0 400Z" fill="#c9774e" filter="url(#sh)"/>
+    <path d="M0 270 Q60 258 116 270 Q170 284 204 316 L0 330Z" fill="#a85d3c"/>
+    <!-- white houses -->
+    <g filter="url(#sh2)">
+      <rect x="18" y="214" width="46" height="40" rx="4" fill="#fff"/>
+      <rect x="70" y="200" width="40" height="54" rx="4" fill="#fff"/>
+      <rect x="116" y="222" width="52" height="36" rx="4" fill="#fff"/>
+      <rect x="40" y="252" width="60" height="34" rx="4" fill="#fff"/>
+      <rect x="110" y="262" width="44" height="34" rx="4" fill="#fff"/>
+      <rect x="160" y="272" width="34" height="30" rx="4" fill="#fff"/>
+    </g>
+    <!-- blue domes -->
+    <path d="M70 200 Q90 168 110 200Z" fill="#1f4fb8"/>
+    <path d="M116 222 Q132 200 148 222Z" fill="#1f4fb8"/>
+    <rect x="88" y="160" width="4" height="12" fill="#f7f1de"/><rect x="84" y="164" width="12" height="3" fill="#f7f1de"/>
+    <!-- windows/doors -->
+    <g fill="#1f4fb8"><rect x="30" y="228" width="10" height="12" rx="5"/><rect x="82" y="218" width="12" height="16" rx="6"/><rect x="128" y="234" width="10" height="12"/><rect x="62" y="264" width="10" height="16" rx="5"/><rect x="124" y="274" width="10" height="14"/><rect x="170" y="282" width="8" height="12"/></g>
+    <!-- windmill (Mykonos) on far right ridge -->
+    <g transform="translate(420 240)" filter="url(#sh2)">
+      <path d="M-14 46 L-10 0 H10 L14 46Z" fill="#fff"/>
+      <path d="M-11 0 Q0 -14 11 0Z" fill="#a85d3c"/>
+      <g transform="translate(0 -2)"><g id="sail"><path d="M0 0 L0 -34" stroke="#2f3a18" stroke-width="2.5"/><rect x="1" y="-34" width="10" height="24" fill="#f7f1de" stroke="#2f3a18" stroke-width="1.2"/></g>
+      <use href="#sail" transform="rotate(90)"/><use href="#sail" transform="rotate(180)"/><use href="#sail" transform="rotate(270)"/><circle r="4" fill="#2f3a18"/></g>
+    </g>
+    <!-- mid sea -->
+    <path d="M0 380 Q130 360 260 384 T500 374 V590 H0Z" fill="#3f74e0" filter="url(#sh)"/>
+    <!-- ferry -->
+    <g transform="translate(250 380)" filter="url(#sh2)">
+      <path d="M0 22 H170 L156 46 H12Z" fill="#fff"/>
+      <path d="M20 22 v-20 h110 v20" fill="#fff"/>
+      <path d="M44 2 v-14 h60 v14" fill="#f4c430"/>
+      <g fill="#1f4fb8"><rect x="30" y="8" width="14" height="9" rx="2"/><rect x="52" y="8" width="14" height="9" rx="2"/><rect x="74" y="8" width="14" height="9" rx="2"/><rect x="96" y="8" width="14" height="9" rx="2"/></g>
+      <rect x="0" y="30" width="170" height="5" fill="#1f4fb8"/>
+    </g>
+    <!-- near sea -->
+    <path d="M0 450 Q140 424 270 452 T500 440 V590 H0Z" fill="#1f4fb8" filter="url(#sh)"/>
+    <path d="M0 520 Q130 498 250 522 T500 512 V590 H0Z" fill="#163a8a" filter="url(#sh)"/>
+    <!-- foreground olive branch -->
+    <g filter="url(#sh2)">
+      <path d="M500 470 Q400 500 320 590" stroke="#2f3a18" stroke-width="6" fill="none"/>
+      <g fill="#7d8f45"><ellipse cx="470" cy="470" rx="26" ry="9" transform="rotate(-20 470 470)"/><ellipse cx="440" cy="500" rx="26" ry="9" transform="rotate(30 440 500)"/><ellipse cx="410" cy="506" rx="26" ry="9" transform="rotate(-30 410 506)"/><ellipse cx="380" cy="536" rx="26" ry="9" transform="rotate(25 380 536)"/><ellipse cx="350" cy="548" rx="24" ry="8" transform="rotate(-35 350 548)"/></g>
+      <g fill="#2f3a18"><circle cx="452" cy="486" r="7"/><circle cx="398" cy="522" r="7"/></g>
+    </g>
+    <!-- Parthenon label chip (Athens) -->
+    <g transform="translate(22 470)">
+      <rect width="170" height="64" rx="14" fill="#f7f1de"/>
+      <g fill="#2f3a18"><path d="M16 22 L50 10 L84 22Z"/><rect x="18" y="24" width="64" height="4"/><rect x="22" y="30" width="6" height="18"/><rect x="34" y="30" width="6" height="18"/><rect x="46" y="30" width="6" height="18"/><rect x="58" y="30" width="6" height="18"/><rect x="70" y="30" width="6" height="18"/><rect x="18" y="48" width="64" height="5"/></g>
+      <text x="92" y="30" font-family="Poppins" font-weight="800" font-size="14" fill="#2f3a18">START</text>
+      <text x="92" y="48" font-family="Poppins" font-weight="600" font-size="13" fill="#4b5a2c">in Athens</text>
+    </g>
+  </svg>
+
+  <div class="kick">GREECE · ISLAND HOP</div>
+  <h1>Athens, <span>Mykonos</span> &amp; Santorini</h1>
+  <div class="sub">Ancient Athens, whitewashed lanes and caldera sunsets, linked by sea in one easy trip.</div>
+  <div class="stack">
+    <div class="st"><i>1</i><div><b>ATHENS</b> <small>Acropolis &amp; Plaka</small></div><span class="n">2 nights</span></div>
+    <div class="leg">⛴️ Ferry from Piraeus · approx. 2.5–5 h</div>
+    <div class="st"><i>2</i><div><b>MYKONOS</b> <small>Little Venice</small></div><span class="n">2 nights</span></div>
+    <div class="leg">⛴️ High-speed ferry · approx. 2–3 h</div>
+    <div class="st"><i>3</i><div><b>SANTORINI</b> <small>Oia &amp; caldera</small></div><span class="n">3 nights</span></div>
+  </div>
+
+  <div class="cols">
+    <div class="card days"><h3>DAY BY DAY</h3>
+      <div class="d"><b>Day 1</b><p>Arrive Athens, evening stroll in Plaka</p></div>
+      <div class="d"><b>Day 2</b><p>Acropolis &amp; Parthenon guided tour</p></div>
+      <div class="d"><b>Day 3</b><p>Ferry to Mykonos, sunset at the windmills</p></div>
+      <div class="d"><b>Day 4</b><p>Beaches, or Delos island (optional)</p></div>
+      <div class="d"><b>Day 5</b><p>Ferry to Santorini, cliff-top Fira</p></div>
+      <div class="d"><b>Day 6</b><p>Oia village &amp; caldera sunset cruise</p></div>
+      <div class="d"><b>Day 7</b><p>Black-sand beach &amp; local wine tasting</p></div>
+      <div class="d"><b>Day 8</b><p>Fly Santorini → Athens, depart</p></div>
+    </div>
+    <div class="card inc"><h3>WHAT'S INCLUDED</h3>
+      <div class="g">
+        <div><em>🏨</em>7 nights hotels + breakfast</div>
+        <div><em>⛴️</em>Ferries Athens–Mykonos–Santorini</div>
+        <div><em>✈️</em>Santorini → Athens flight</div>
+        <div><em>🚐</em>Airport, port &amp; hotel transfers</div>
+        <div><em>🏛️</em>Acropolis guided tour + entry</div>
+        <div><em>⛵</em>Santorini caldera sunset cruise</div>
+        <div><em>🍷</em>Santorini wine tasting</div>
+        <div><em>💬</em>24/7 WhatsApp support</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note"><b>Perfect for</b> honeymooners, couples &amp; friends.<br><b>Best time:</b> May–June &amp; Sept–Oct (warm sea, fewer crowds).</div>
+  <div class="cta">GET YOUR QUOTE<br>ON WHATSAPP →</div>
+  <div class="foot"><span class="w">www.z-oceantours.com</span><span>💬 +33 7 51 13 64 73</span><span>✉️ info@zoceantours.com</span></div>
+</div>
+</body></html>

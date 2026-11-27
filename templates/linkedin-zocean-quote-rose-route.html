@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- LinkedIn · Z Ocean Tours · quote card "rose route": dusty rose + deep burgundy, line-art route with train / ferry / plane nodes, Bitter serif quote with italic emphasis, burgundy footer. 1200x1200. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:1200px; overflow:hidden; font-family:'DM Sans','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1200px; height:1200px; background:#ecd3cc; color:#5e1a2e; overflow:hidden; }
+  .frame { position:absolute; inset:36px; border:2px solid #5e1a2e; border-radius:30px; }
+  .hd { position:absolute; top:76px; left:84px; right:84px; display:flex; align-items:center; }
+  .hd img { height:84px; border-radius:14px; }
+  .hd .nm { margin-left:16px; font-family:'Bitter',serif; font-weight:800; font-size:28px; letter-spacing:3px; }
+  .hd .tg { margin-left:auto; font-weight:700; font-size:16px; letter-spacing:4px; background:#5e1a2e; color:#ecd3cc; border-radius:30px; padding:10px 20px; }
+  .route { position:absolute; top:210px; left:84px; }
+  .qm { position:absolute; top:440px; left:76px; font-family:'Bitter',serif; font-weight:800; font-size:200px; line-height:1; color:#c9877a; }
+  blockquote { position:absolute; top:520px; left:90px; width:1010px; font-family:'Bitter',serif; font-weight:600; font-size:74px; line-height:1.18; letter-spacing:-.5px; color:#5e1a2e; }
+  blockquote i { font-weight:400; color:#a3384f; }
+  .by { position:absolute; top:950px; left:92px; font-weight:700; font-size:20px; letter-spacing:5px; color:#8a4253; }
+  .by::before { content:''; display:inline-block; width:60px; height:2px; background:#8a4253; vertical-align:middle; margin-right:16px; }
+  .line { position:absolute; top:850px; left:92px; width:900px; font-size:26px; line-height:1.4; color:#7a3346; }
+  .foot { position:absolute; bottom:36px; left:36px; right:36px; height:110px; background:#5e1a2e; border-radius:0 0 28px 28px; color:#f6e6e1; display:flex; align-items:center; justify-content:center; gap:44px; font-size:22px; font-weight:600; }
+  .foot .w { font-family:'Bitter',serif; font-weight:800; color:#f2b8a8; }
+</style></head><body>
+<div class="p">
+  <div class="frame"></div>
+  <div class="hd"><img src="assets/zocean-logo.jpg"><div class="nm">Z-OCEAN TOURS</div><div class="tg">FOR TRAVEL AGENTS</div></div>
+
+  <svg class="route" width="1032" height="200" viewBox="0 0 1032 200">
+    <path d="M30 140 C180 40 300 40 380 110 S600 180 680 90 S900 20 1000 80" fill="none" stroke="#5e1a2e" stroke-width="3" stroke-dasharray="3 12" stroke-linecap="round"/>
+    <!-- nodes -->
+    <g fill="#ecd3cc" stroke="#5e1a2e" stroke-width="3"><circle cx="30" cy="140" r="12"/><circle cx="380" cy="110" r="12"/><circle cx="680" cy="90" r="12"/><circle cx="1000" cy="80" r="12"/></g>
+    <g fill="#a3384f"><circle cx="30" cy="140" r="5"/><circle cx="380" cy="110" r="5"/><circle cx="680" cy="90" r="5"/><circle cx="1000" cy="80" r="5"/></g>
+    <!-- train -->
+    <g transform="translate(180 40)" fill="none" stroke="#5e1a2e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M0 40 V10 Q0 0 10 0 H50 Q66 0 70 16 L74 40Z" fill="#f6e6e1"/>
+      <path d="M8 8 h20 v14 h-20z M36 8 h16 v14 h-16z"/>
+      <circle cx="16" cy="46" r="5"/><circle cx="56" cy="46" r="5"/><path d="M-8 54 H84"/>
+    </g>
+    <!-- ferry -->
+    <g transform="translate(500 120)" fill="none" stroke="#5e1a2e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M0 30 H90 L80 46 H8Z" fill="#f6e6e1"/>
+      <path d="M14 30 v-16 h56 v16"/><path d="M28 14 v-10 h28 v10"/>
+      <path d="M-10 56 q12 -6 24 0 t24 0 t24 0 t24 0 t24 0"/>
+    </g>
+    <!-- plane -->
+    <g transform="translate(830 20) rotate(12)" fill="#f6e6e1" stroke="#5e1a2e" stroke-width="3" stroke-linejoin="round">
+      <path d="M0 22 L70 18 Q84 18 84 24 Q84 30 70 30 L0 26Z"/>
+      <path d="M34 20 L22 0 H32 L52 20Z"/><path d="M34 28 L22 48 H32 L52 28Z"/><path d="M4 22 L-4 10 H4 L12 22Z"/>
+    </g>
+    <g font-family="DM Sans" font-weight="700" font-size="15" letter-spacing="3" fill="#8a4253"><text x="0" y="182">CITY 1</text><text x="350" y="152">CITY 2</text><text x="650" y="132">CITY 3</text><text x="960" y="122">HOME</text></g>
+  </svg>
+
+  <div class="qm">“</div>
+  <blockquote>A route is just a line on a map, until someone makes <i>every connection</i> work.</blockquote>
+  <div class="line">Trains, ferries, flights and transfers, lined up and timed, so your clients simply enjoy the trip.</div>
+  <div class="by">Z-OCEAN TOURS · MULTI-COUNTRY EUROPE</div>
+
+  <div class="foot"><span class="w">www.z-oceantours.com</span><span>💬 +33 7 51 13 64 73</span><span>✉️ info@zoceantours.com</span></div>
+</div>
+</body></html>
