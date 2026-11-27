@@ -51,3 +51,9 @@
 | 2026-11-26 | Z Ocean Tours | story of Adriatic Escape poster | stories/2026-11-26-slovenia-croatia-story.jpg | yes | - | - |
 | 2026-11-26 | LinkedIn – The Top Tickets | quote card: itineraries sell the trip, experiences sell the next one | linkedin/2026-11-26-toptickets-quote-experiences.jpg | yes | - | deep emerald + cream / line-art arch skyline / Inter Display |
 | 2026-11-26 | LinkedIn – Z Ocean Tours | text story post: shoulder-season trend for 2027, 3 tips for agents | (text only) | yes | - | - |
+| 2026-11-27 | The Top Tickets | Budapest Danube Evening Cruise (Parliament, Margaret Island, Chain Bridge, Buda Castle, Gellért Hill) | toptickets/2026-11-27-budapest-danube-evening-cruise.jpg | yes | I | black + champagne gold + rose / gold line-art night river / Lora |
+| 2026-11-27 | Z Ocean Tours | Greek Island Hop: Athens + Mykonos + Santorini, 8 Days / 7 Nights | zocean/2026-11-27-greece-athens-mykonos-santorini.jpg | yes | I | deep olive + cream + lemon + cobalt / paper-cut layered islands / Poppins |
+| 2026-11-27 | The Top Tickets | story of Budapest Danube cruise poster | stories/2026-11-27-budapest-danube-cruise-story.jpg | yes | - | - |
+| 2026-11-27 | Z Ocean Tours | story of Greek Island Hop poster | stories/2026-11-27-greece-islands-story.jpg | yes | - | - |
+| 2026-11-27 | LinkedIn – The Top Tickets | B2B poster: your clients are heading to Europe this winter (4 December products + 3 steps) | linkedin/2026-11-27-toptickets-b2b-december.jpg | yes | - | warm ivory + cobalt + coral / geometric snowflake + flat icon tiles / Archivo Black |
+| 2026-11-27 | LinkedIn – Z Ocean Tours | quote card: a route is just a line on a map until someone makes every connection work | linkedin/2026-11-27-zocean-quote-every-connection.jpg | yes | - | dusty rose + burgundy / line-art route with train, ferry, plane / Bitter |
