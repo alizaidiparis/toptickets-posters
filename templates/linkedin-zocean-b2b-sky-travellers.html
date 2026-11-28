@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- LinkedIn · Z Ocean Tours B2B "One partner for every kind of traveller": pale sky blue + deep navy ink + orange, big Inter Display Black headline, line-art luggage-tag illustration, 4 traveller-type tiles, 3-step strip, navy footer. 1200x1200. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:1200px; overflow:hidden; font-family:'Inter','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1200px; height:1200px; background:#dcebf7; color:#0d2240; overflow:hidden; }
+  .p:before { content:""; position:absolute; right:-160px; top:-160px; width:620px; height:620px; border-radius:50%; border:2px dashed #9fc2e0; }
+  .hd { position:absolute; top:44px; left:60px; right:60px; display:flex; align-items:center; }
+  .hd .lg { background:#fff; border-radius:16px; padding:6px 14px; }
+  .hd img { height:70px; display:block; }
+  .hd .tag { margin-left:auto; font-weight:800; font-size:17px; letter-spacing:4px; color:#ff6a1a; border:2px solid #ff6a1a; border-radius:30px; padding:10px 20px; background:#fff; }
+  .kick { position:absolute; top:178px; left:64px; font-weight:800; font-size:18px; letter-spacing:5px; color:#3d6a96; }
+  h1 { position:absolute; top:210px; left:60px; width:720px; font-family:'Inter Display','Inter',sans-serif; font-weight:900; font-size:68px; line-height:1; letter-spacing:-2px; }
+  h1 span { color:#ff6a1a; }
+  .sub { position:absolute; top:452px; left:64px; width:640px; font-size:23px; line-height:1.4; color:#2d4b6e; font-weight:500; }
+  .art { position:absolute; top:150px; right:50px; }
+  .tiles { position:absolute; top:630px; left:60px; right:60px; display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .t { background:#fff; border-radius:22px; padding:22px 20px; height:236px; border:2px solid #0d2240; box-shadow:6px 6px 0 #0d2240; }
+  .t i { font-style:normal; font-size:40px; display:block; margin-bottom:10px; }
+  .t strong { display:block; font-family:'Inter Display','Inter',sans-serif; font-weight:900; font-size:25px; margin-bottom:8px; }
+  .t p { font-size:17px; line-height:1.38; color:#3a5677; }
+  .steps { position:absolute; top:894px; left:60px; right:60px; display:flex; gap:0; align-items:center; background:#0d2240; color:#fff; border-radius:22px; padding:22px 26px; }
+  .steps div { flex:1; font-size:19px; line-height:1.3; font-weight:500; display:flex; gap:12px; align-items:center; }
+  .steps b { flex:none; width:44px; height:44px; border-radius:50%; background:#ff6a1a; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:21px; }
+  .steps .ar { flex:none; width:36px; color:#ff6a1a; font-size:28px; justify-content:center; }
+  .cta { position:absolute; top:1024px; left:60px; right:60px; display:flex; align-items:center; gap:18px; }
+  .cta .btn { background:#ff6a1a; color:#fff; font-weight:900; font-size:22px; letter-spacing:1px; padding:16px 26px; border-radius:16px; }
+  .cta span { font-size:20px; font-weight:700; color:#0d2240; }
+  .ft { position:absolute; bottom:0; left:0; right:0; height:72px; background:#0d2240; color:#dcebf7; display:flex; align-items:center; justify-content:center; gap:44px; font-size:20px; font-weight:600; }
+  .ft b { color:#ffb000; }
+</style></head><body>
+<div class="p">
+  <div class="hd"><div class="lg"><img src="assets/zocean-logo.jpg"></div><div class="tag">FOR TRAVEL AGENTS</div></div>
+  <div class="kick">TAILOR-MADE EUROPE · B2B</div>
+  <h1>Every client is different. <span>One partner</span> plans them all.</h1>
+  <div class="sub">Multi-country Europe packages built around your client's dates, pace and budget: hotels, trains, transfers and experiences in one proposal.</div>
+
+  <svg class="art" width="360" height="430" viewBox="0 0 360 430">
+    <g fill="none" stroke="#0d2240" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+      <!-- suitcase -->
+      <rect x="70" y="150" width="200" height="250" rx="26" fill="#fff"/>
+      <path d="M130 150 V112 Q130 96 146 96 H194 Q210 96 210 112 V150"/>
+      <path d="M110 150 V400 M230 150 V400"/>
+      <circle cx="110" cy="412" r="12" fill="#dcebf7"/><circle cx="230" cy="412" r="12" fill="#dcebf7"/>
+    </g>
+    <!-- stickers -->
+    <circle cx="170" cy="230" r="38" fill="#ff6a1a"/><text x="170" y="241" text-anchor="middle" font-family="Inter Display" font-weight="900" font-size="28" fill="#fff">EU</text>
+    <rect x="128" y="290" width="84" height="44" rx="8" fill="#ffb000" transform="rotate(-8 170 312)"/><text x="170" y="320" text-anchor="middle" font-family="Inter" font-weight="800" font-size="18" fill="#0d2240" transform="rotate(-8 170 312)">PARIS</text>
+    <rect x="132" y="346" width="76" height="30" rx="15" fill="#0a4fd6"/><text x="170" y="367" text-anchor="middle" font-family="Inter" font-weight="800" font-size="15" fill="#fff">ROMA</text>
+    <!-- luggage tag -->
+    <g transform="rotate(14 290 150)">
+      <path d="M250 60 H330 V200 H250 Z" fill="#fff" stroke="#0d2240" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="290" cy="82" r="8" fill="#dcebf7" stroke="#0d2240" stroke-width="3"/>
+      <path d="M262 112 H318 M262 132 H306 M262 152 H318 M262 172 H296" stroke="#9fc2e0" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <path d="M290 80 Q250 120 210 150" fill="none" stroke="#0d2240" stroke-width="3"/>
+    <!-- plane -->
+    <path d="M20 70 Q90 0 180 40" fill="none" stroke="#ff6a1a" stroke-width="3" stroke-dasharray="8 8"/>
+    <text x="178" y="52" font-size="34">✈️</text>
+  </svg>
+
+  <div class="tiles">
+    <div class="t"><i>👨‍👩‍👧</i><strong>Families</strong><p>Easy pace, short transfers and kid-friendly stops in every city.</p></div>
+    <div class="t"><i>💍</i><strong>Honeymooners</strong><p>Scenic routes, lakes, coasts and romantic evenings planned in.</p></div>
+    <div class="t"><i>👥</i><strong>Groups</strong><p>One itinerary and one contact for the whole party, start to finish.</p></div>
+    <div class="t"><i>🎄</i><strong>Seasonal trips</strong><p>Christmas markets, spring gardens, summer islands, autumn cities.</p></div>
+  </div>
+
+  <div class="steps">
+    <div><b>1</b>Share dates, pax &amp; budget</div><div class="ar">→</div>
+    <div><b>2</b>Get a day-by-day proposal</div><div class="ar">→</div>
+    <div><b>3</b>Confirm, we handle the rest</div>
+  </div>
+
+  <div class="cta"><div class="btn">AGENT RATES ON REQUEST</div><span>WhatsApp or email us your next client brief</span></div>
+
+  <div class="ft"><b>www.z-oceantours.com</b><span>📲 +33 7 51 13 64 73</span><span>✉️ info@zoceantours.com</span></div>
+</div>
+</body></html>

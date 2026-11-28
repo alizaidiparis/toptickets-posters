@@ -57,3 +57,15 @@
 | 2026-11-27 | Z Ocean Tours | story of Greek Island Hop poster | stories/2026-11-27-greece-islands-story.jpg | yes | - | - |
 | 2026-11-27 | LinkedIn – The Top Tickets | B2B poster: your clients are heading to Europe this winter (4 December products + 3 steps) | linkedin/2026-11-27-toptickets-b2b-december.jpg | yes | - | warm ivory + cobalt + coral / geometric snowflake + flat icon tiles / Archivo Black |
 | 2026-11-27 | LinkedIn – Z Ocean Tours | quote card: a route is just a line on a map until someone makes every connection work | linkedin/2026-11-27-zocean-quote-every-connection.jpg | yes | - | dusty rose + burgundy / line-art route with train, ferry, plane / Bitter |
+| 2026-11-28 | The Top Tickets | Vienna: Schönbrunn Palace Grand Tour Ticket (Hall of Mirrors, Great Gallery, Sisi's apartments, Millions Room, Napoleon Room, Gloriette) | toptickets/2026-11-28-schonbrunn-palace-ticket.jpg | pending approval | J | pistachio mint + palace yellow + raspberry / isometric diorama / DM Sans 800 |
+| 2026-11-28 | Z Ocean Tours | Benelux & the Rhine: Amsterdam + Brussels + Bruges + Cologne, 7 Days / 6 Nights | zocean/2026-11-28-benelux-rhine.jpg | pending approval | J | deep cranberry + cream + gold / gabled canal-house facades street / Montserrat 900 |
+| 2026-11-28 | The Top Tickets | story of Schönbrunn poster | stories/2026-11-28-schonbrunn-palace-story.jpg | pending approval | - | - |
+| 2026-11-28 | Z Ocean Tours | story of Benelux & the Rhine poster | stories/2026-11-28-benelux-rhine-story.jpg | pending approval | - | - |
+| 2026-11-28 | LinkedIn – The Top Tickets | text story post: December holiday hours (24/25/31 Dec, 1 Jan), 3 tips for agents | (text only) | pending approval | - | - |
+| 2026-11-28 | LinkedIn – Z Ocean Tours | B2B poster: every client is different, one partner plans them all (4 traveller types + 3 steps) | linkedin/2026-11-28-zocean-b2b-every-client.jpg | pending approval | - | pale sky blue + navy + orange / line-art suitcase & luggage tag / Inter Display Black |
+
+## Hook creatives
+
+| Date | Brand | Hook | Word | Posted |
+|---|---|---|---|---|
+| 2026-11-28 | The Top Tickets | what i actually want for christmas | PARIS | waiting for owner's generated image |

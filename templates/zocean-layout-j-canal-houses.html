@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<!-- Z Ocean Tours · Layout J "Street of gabled houses": deep cranberry + cream + gold, a row of 4 tall gabled facades (stepped, bell, guildhouse, cathedral) each holding one city (nights + highlights), cobblestone route band with train times, Montserrat 900 title, cream day-by-day card beside a gold 8-inclusion card, perfect-for/best-time note + orange CTA, ink footer. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; overflow:hidden; font-family:'Montserrat','Noto Color Emoji',sans-serif; }
+  .p { position:relative; width:1080px; height:1350px; background:#7a1027; color:#fbf1e1; overflow:hidden; }
+  .p:before { content:""; position:absolute; inset:0; background-image:linear-gradient(45deg, rgba(255,255,255,.035) 25%, transparent 25%, transparent 75%, rgba(255,255,255,.035) 75%), linear-gradient(45deg, rgba(255,255,255,.035) 25%, transparent 25%, transparent 75%, rgba(255,255,255,.035) 75%); background-size:40px 40px; background-position:0 0, 20px 20px; }
+  .hd { position:absolute; top:26px; left:40px; right:40px; height:76px; display:flex; align-items:center; }
+  .hd .lg { background:#fbf1e1; border-radius:16px; padding:6px 14px; height:76px; display:flex; align-items:center; }
+  .hd img { height:62px; }
+  .hd .days { margin-left:auto; display:flex; border:2px solid #e8b04a; border-radius:40px; overflow:hidden; font-weight:900; font-size:20px; letter-spacing:2px; }
+  .hd .days span { padding:12px 20px; }
+  .hd .days span:first-child { background:#e8b04a; color:#2a0a12; }
+  .kick { position:absolute; top:126px; left:44px; font-weight:800; font-size:16px; letter-spacing:5px; color:#e8b04a; }
+  h1 { position:absolute; top:150px; left:40px; font-weight:900; font-size:84px; line-height:.92; letter-spacing:-2px; text-transform:uppercase; }
+  h1 span { color:#e8b04a; }
+  .cities { position:absolute; top:170px; right:44px; text-align:right; font-size:21px; line-height:1.45; font-weight:600; color:#f6d9c4; }
+  .cities b { color:#fbf1e1; font-weight:800; }
+  .street { position:absolute; top:330px; left:30px; width:1020px; height:420px; }
+  .hs { position:absolute; bottom:52px; width:236px; }
+  .hs svg { position:absolute; left:0; bottom:0; }
+  .hs .bd { position:absolute; left:22px; right:22px; bottom:16px; background:#fffaf1; border:2.5px solid #2a0a12; border-radius:10px; padding:10px 12px; color:#2a0a12; }
+  .hs .bd h4 { font-weight:900; font-size:23px; letter-spacing:-.5px; line-height:1.05; }
+  .hs .bd .nt { display:inline-block; margin:5px 0 6px; background:#7a1027; color:#fbf1e1; font-size:13px; font-weight:800; letter-spacing:2px; padding:3px 9px; border-radius:12px; }
+  .hs .bd p { font-size:13.5px; line-height:1.3; font-weight:600; color:#5a2a33; }
+  .road { position:absolute; left:0; right:0; bottom:0; height:52px; background:#2a0a12; border-radius:0 0 18px 18px; background-image:radial-gradient(circle at 10px 10px, #4a1a26 6px, transparent 7px); background-size:22px 18px; }
+  .pill { position:absolute; bottom:12px; background:#e8b04a; color:#2a0a12; font-weight:800; font-size:14px; padding:6px 12px; border-radius:20px; border:2px solid #2a0a12; white-space:nowrap; }
+  .grid { position:absolute; top:772px; left:40px; right:40px; display:grid; grid-template-columns:1.08fr 1fr; gap:20px; }
+  .card { height:338px; border-radius:22px; padding:20px 22px; }
+  .dd { background:#fbf1e1; color:#2a0a12; }
+  .inc { background:#e8b04a; color:#2a0a12; }
+  .card h3 { font-weight:900; font-size:15px; letter-spacing:4px; margin-bottom:12px; color:#7a1027; }
+  .d { display:flex; gap:10px; font-size:17px; line-height:1.25; margin-bottom:11px; font-weight:500; }
+  .d b { flex:none; width:60px; font-weight:900; color:#7a1027; }
+  .ig { display:grid; grid-template-columns:1fr 1fr; gap:9px; }
+  .ig div { background:#fffaf1; border:2px solid #2a0a12; border-radius:12px; padding:8px 10px; font-size:14.5px; font-weight:700; line-height:1.22; display:flex; gap:8px; align-items:center; height:60px; }
+  .ig div i { font-style:normal; font-size:22px; }
+  .note { position:absolute; top:1132px; left:40px; width:600px; font-size:17px; line-height:1.4; color:#f6d9c4; font-weight:500; }
+  .note b { color:#fbf1e1; font-weight:800; }
+  .cta { position:absolute; top:1140px; right:40px; width:360px; text-align:center; background:#ff6a1a; color:#fff; font-weight:900; font-size:21px; letter-spacing:1.5px; line-height:1.2; padding:16px 18px; border-radius:18px; border:3px solid #fbf1e1; }
+  .foot { position:absolute; bottom:0; left:0; right:0; height:86px; background:#2a0a12; border-top:4px solid #e8b04a; display:flex; align-items:center; justify-content:center; gap:40px; font-size:21px; font-weight:700; }
+  .foot .w { color:#e8b04a; font-weight:900; }
+</style></head><body>
+<div class="p">
+  <div class="hd"><div class="lg"><img src="assets/zocean-logo.jpg"></div><div class="days"><span>7 DAYS</span><span>6 NIGHTS</span></div></div>
+  <div class="kick">EUROPE PACKAGE · 3 COUNTRIES BY TRAIN</div>
+  <h1>Benelux &amp;<br><span>the Rhine</span></h1>
+  <div class="cities"><b>🇳🇱 Amsterdam</b> canals<br><b>🇧🇪 Brussels &amp; Bruges</b> chocolate &amp; lace<br><b>🇩🇪 Cologne</b> cathedral &amp; Rhine</div>
+
+  <div class="street">
+    <!-- house 1: Amsterdam stepped gable -->
+    <div class="hs" style="left:6px;height:360px">
+      <svg width="236" height="360" viewBox="0 0 236 360">
+        <path d="M14 360 V130 H34 V100 H58 V70 H82 V40 H100 V14 H136 V40 H154 V70 H178 V100 H202 V130 H222 V360Z" fill="#f2b8a8" stroke="#2a0a12" stroke-width="3"/>
+        <rect x="108" y="22" width="20" height="10" fill="#2a0a12"/>
+        <g fill="#fffaf1" stroke="#2a0a12" stroke-width="2"><rect x="100" y="52" width="36" height="34" rx="18"/><rect x="48" y="112" width="34" height="42"/><rect x="101" y="112" width="34" height="42"/><rect x="154" y="112" width="34" height="42"/></g>
+        <path d="M48 133 H82 M101 133 H135 M154 133 H188" stroke="#2a0a12" stroke-width="1.5"/>
+      </svg>
+      <div class="bd"><h4>Amsterdam</h4><span class="nt">2 NIGHTS</span><p>Canal cruise · Jordaan · Rijksmuseum quarter · Dam Square</p></div>
+    </div>
+    <!-- house 2: Brussels guildhouse -->
+    <div class="hs" style="left:262px;height:392px">
+      <svg width="236" height="400" viewBox="0 0 236 400">
+        <path d="M14 400 V150 L40 150 L40 120 Q118 20 196 120 L196 150 L222 150 V400Z" fill="#fbf1e1" stroke="#2a0a12" stroke-width="3"/>
+        <path d="M118 40 L118 8" stroke="#2a0a12" stroke-width="3"/><circle cx="118" cy="8" r="8" fill="#e8b04a" stroke="#2a0a12" stroke-width="2"/>
+        <path d="M60 128 Q118 60 176 128" fill="none" stroke="#e8b04a" stroke-width="6"/>
+        <g fill="#7a1027" stroke="#2a0a12" stroke-width="2"><rect x="98" y="90" width="40" height="34" rx="4"/><rect x="44" y="168" width="32" height="40"/><rect x="102" y="168" width="32" height="40"/><rect x="160" y="168" width="32" height="40"/></g>
+        <path d="M14 150 H222" stroke="#e8b04a" stroke-width="5"/>
+      </svg>
+      <div class="bd"><h4>Brussels</h4><span class="nt">2 NIGHTS</span><p>Grand-Place · Atomium · Galeries Royales · waffles &amp; pralines</p></div>
+    </div>
+    <!-- house 3: Bruges bell gable -->
+    <div class="hs" style="left:518px;height:372px">
+      <svg width="236" height="372" viewBox="0 0 236 372">
+        <path d="M14 372 V150 Q14 120 44 116 Q60 100 64 70 Q84 60 92 34 L144 34 Q152 60 172 70 Q176 100 192 116 Q222 120 222 150 V372Z" fill="#e8b04a" stroke="#2a0a12" stroke-width="3"/>
+        <g fill="#fffaf1" stroke="#2a0a12" stroke-width="2"><rect x="104" y="48" width="28" height="30" rx="14"/><rect x="54" y="132" width="34" height="42"/><rect x="101" y="132" width="34" height="42"/><rect x="148" y="132" width="34" height="42"/></g>
+        <path d="M54 153 H88 M101 153 H135 M148 153 H182" stroke="#2a0a12" stroke-width="1.5"/>
+      </svg>
+      <div class="bd"><h4>Bruges</h4><span class="nt">DAY TRIP</span><p>Markt &amp; Belfry · canals · Begijnhof · Belgian chocolate</p></div>
+    </div>
+    <!-- house 4: Cologne with cathedral spires -->
+    <div class="hs" style="left:774px;height:414px">
+      <svg width="236" height="414" viewBox="0 0 236 414">
+        <g fill="#2a0a12"><path d="M40 210 L40 70 L58 6 L76 70 L76 210Z"/><path d="M160 210 L160 70 L178 6 L196 70 L196 210Z"/><rect x="76" y="110" width="84" height="100"/><path d="M76 110 L118 64 L160 110Z"/></g>
+        <g fill="#7a1027"><rect x="52" y="90" width="12" height="40" rx="6"/><rect x="172" y="90" width="12" height="40" rx="6"/><circle cx="118" cy="140" r="16"/></g>
+        <path d="M14 414 V196 L118 150 L222 196 V414Z" fill="#bfd8d2" stroke="#2a0a12" stroke-width="3"/>
+        <g fill="#fffaf1" stroke="#2a0a12" stroke-width="2"><rect x="44" y="222" width="30" height="36"/><rect x="103" y="210" width="30" height="48"/><rect x="162" y="222" width="30" height="36"/></g>
+      </svg>
+      <div class="bd"><h4>Cologne</h4><span class="nt">2 NIGHTS</span><p>Cathedral · Old Town · Rhine Valley cruise &amp; castles</p></div>
+    </div>
+    <div class="road"></div>
+    <div class="pill" style="left:206px">🚆 ~1h50</div>
+    <div class="pill" style="left:462px">🚆 ~1h ↔</div>
+    <div class="pill" style="left:694px">🚆 ~1h50 from Brussels</div>
+  </div>
+
+  <div class="grid">
+    <div class="card dd">
+      <h3>DAY BY DAY</h3>
+      <div class="d"><b>Day 1</b><span>Arrive Amsterdam · evening canal cruise</span></div>
+      <div class="d"><b>Day 2</b><span>Jordaan, museums quarter, Dam Square</span></div>
+      <div class="d"><b>Day 3</b><span>Train to Brussels · Grand-Place by night</span></div>
+      <div class="d"><b>Day 4</b><span>Day trip to Bruges: Belfry &amp; canals</span></div>
+      <div class="d"><b>Day 5</b><span>Train to Cologne · cathedral visit</span></div>
+      <div class="d"><b>Day 6</b><span>Rhine Valley: river cruise past castles</span></div>
+      <div class="d"><b>Day 7</b><span>Breakfast &amp; departure transfer</span></div>
+      <div style="margin-top:12px;border-top:2px dashed #7a1027;padding-top:10px;font-size:15px;font-weight:700;color:#7a1027">🎄 December tip: the market by Cologne Cathedral &amp; the Grand-Place light show</div>
+    </div>
+    <div class="card inc">
+      <h3>WHAT'S INCLUDED</h3>
+      <div class="ig">
+        <div><i>🏨</i>6 nights hotel + breakfast</div>
+        <div><i>🚆</i>All intercity trains</div>
+        <div><i>🚐</i>Arrival &amp; departure transfers</div>
+        <div><i>🛶</i>Amsterdam canal cruise</div>
+        <div><i>🏰</i>Bruges day trip</div>
+        <div><i>⛪</i>Cologne Cathedral visit</div>
+        <div><i>🚢</i>Rhine Valley cruise</div>
+        <div><i>💬</i>24/7 WhatsApp support</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note"><b>Perfect for:</b> first-timers, couples &amp; families who want 3 countries without flights.<br><b>Best time:</b> April–October, or December for the Christmas markets of Brussels &amp; Cologne.</div>
+  <div class="cta">GET YOUR QUOTE<br>ON WHATSAPP 💬</div>
+
+  <div class="foot"><span class="w">www.z-oceantours.com</span><span>📲 +33 7 51 13 64 73</span><span>✉️ info@zoceantours.com</span></div>
+</div>
+</body></html>
